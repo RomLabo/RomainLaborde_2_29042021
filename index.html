@@ -20,15 +20,97 @@
 				</ul>
 			</nav>
 		</header>
-        
-        <section>
+       <!--section lodging-->
+		<section id="lodging">
+			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
+			<p>En plein centre ville ou en pleine nature</p>
+			<div class="headerForm">
+				<form method="post" action="traitement.php">
+				    <p>
+				        <label for="townChoice"><img src="icons/position.svg" alt="icon" /></label>
+				        <input type="text" name="townChoice" id="townChoice" placeholder="Ex : Paris,France" size="30" maxlength="10" autofocus />
+				        <input type="image" src="icons/search.svg" alt="Rechercher" />
+				    </p>
+				</form>
+			</div>
+			<div class="lodgingFilters">
+				<ul class="filters">
+					<li>Filtres</li>
+					<li class="filtersItem"><a href="#"><img src="icons/economique.svg" alt="Bouton économique"></a>Economique</li>
+					<li class="filtersItem"><a href="#"><img src="icons/familial.svg" alt="Bouton familial"></a>Familial</li>
+					<li class="filtersItem"><a href="#"><img src="icons/romantique.svg" alt="Bouton romantique"></a>Romantique</li>	
+					<li class="filtersItem"><a href="#"><img src="icons/animaux.svg" alt="Bouton animaux autorisés"></a>Animaux</li>	
+				</ul>
+			</div>
+			<article>
+				<h3>Hébergements à Marseille</h3>
+				<div id="lodgingTown">
+						
+				</div>
+			</article>
+			<aside>
+				<h3>Les plus populaires</h3>
+				<div id="lodgingTownPop">
+						
+				</div>
+			</aside>
+		</section>
 
-        </section>
-        <section>
+		<!--section activity-->
+		<section id="activity">
+			<h2>Activités à Marseille</h2>
+			<div class="activityCards">
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Vieux Port</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Fort de Pomègues</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Îles du Frioul</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Parc National des Calanques</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Notre-Dame-de-la-Garde</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="" />
+					<figcaption>Parc Longchamp</figcaption>
+				</figure>
+			</div>
+		</section>
 
-        </section>
-        <footer>
-
-        </footer>
+		<!--footer-->
+		<footer>
+			<div class="footer">
+				<ul class="footerBlock">
+					<li><h3>A propos</h3></li>
+					<li><a href="#">Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+			</div>
+			<div class="footer">
+				<ul class="footerBlock">
+					<li><h3>Nos hébergements</h3></li>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+			</div>
+			<div class="footer">
+				<ul class="footerBlock">
+					<li><h3>Assistance</h3></li>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+			</div>
+		</footer>
     </body>
 </html>
