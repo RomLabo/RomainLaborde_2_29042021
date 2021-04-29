@@ -5,22 +5,23 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     </head>
 
     <body>
         <!--header-->
-		<header>
-			<h1><img src="logo/Reservia.svg" alt="Réservia"></h1>
-			<nav class="headerNav">
+		
+		<div id="header">
+			<p><img class="resLogo" src="logo/Reservia.svg" alt="Réservia"></p>
+			<nav>
 				<ul class="headerNavTab">
 					<li><a class="tabItem" href="#lodging">Hébergements</a></li>
 					<li><a class="tabItem" href="#activity">Activités</a></li>
 					<li><a class="tabItemRegister" href="#">S'inscrire</a></li>
 				</ul>
 			</nav>
-		</header>
+		</div>	
 
        <!--section lodging-->
 		<section id="lodging">
@@ -30,91 +31,104 @@
 				<form method="post" action="traitement.php">
 				    <p>
 				        <label for="townChoice"><img src="icons/position.svg" alt="icon" /></label>
-				        <input type="text" name="townChoice" id="townChoice" placeholder="Ex : Paris,France" size="30" maxlength="10" autofocus />
-				        <input type="image" src="icons/search.svg" alt="Rechercher" />
+				        <input type="text" name="townChoice" id="townChoice" value="Marseille, France" size="30" maxlength="10" autofocus />
+				        <input type="submit" value="Rechercher" />
 				    </p>
 				</form>
 			</div>
 			<div class="lodgingFilters">
-				<ul class="filters">
-					<li>Filtres</li>
-					<li class="filtersItem"><a href="#"><img src="icons/economique.svg" alt="Bouton économique"></a>Economique</li>
-					<li class="filtersItem"><a href="#"><img src="icons/familial.svg" alt="Bouton familial"></a>Familial</li>
-					<li class="filtersItem"><a href="#"><img src="icons/romantique.svg" alt="Bouton romantique"></a>Romantique</li>	
-					<li class="filtersItem"><a href="#"><img src="icons/animaux.svg" alt="Bouton animaux autorisés"></a>Animaux</li>	
-				</ul>
+				<form method="post" action="traitement.php">
+					<p>
+						Filtres
+						<input type="checkbox" name="economique" id="economique" /> <label for="economique"><img src="economique.sgv" alt="Economique" /></label>
+						<input type="checkbox" name="familial" id="familial" /> <label for="familial"><img src="familial.svg" alt="Familial" /></label>
+						<input type="checkbox" name="romantique" id="romantique" /> <label for="romantique"><img src="romantique.svg" alt="Romantique" /></label>
+						<input type="checkbox" name="animaux" id="animaux" /> <label for="animaux"><img src="animaux.svg" alt="Animaux" /></label>
+					</p>
+				</form>
 			</div>
-			<article>
-				<h3>Hébergements à Marseille</h3>
-				<div id="lodgingTown">
-					<figure>
-						<img src="img/heb/imgHeb1.jpg" alt="Photo d'une chambre de l'Auberge la Cannebière" />
-						<figcaption>Auberge la Cannebière</figcaption>
-					</figure>
-						
-				</div>
-			</article>
-			<aside>
-				<h3>Les plus populaires</h3>
-				<div id="lodgingTownPop">
-						
-				</div>
-			</aside>
+			<p><img src="icons/iconLogo.svg" alt="Icone info" />Plus de 500 logements sont disponibles dans cette ville</p>
+			<div class="lodgingSection">
+				<article>
+					<div class="lodging">
+						<h3>Hébergements à Marseille</h3>
+						<div id="lodgingTown">
+							<div class="lodCard">
+								
+							</div>
+							<div class="lodCard">
+	
+							</div>
+							<div class="lodCard">
+	
+							</div>	
+						</div>
+					</div>
+				</article>
+				<aside>
+					<div class="lodgingPop">
+						<h3>Les plus populaires</h3>
+						<div id="lodgingPopCards">
+								
+						</div>
+					</div>
+				</aside>
+			</div>
 		</section>
 
 		<!--section activity-->
 		<section id="activity">
-			<h2>Activités à Marseille</h2>
+			<h3>Activités à Marseille</h3>
 			<div class="activityCards">
-				<figure>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Vieux Port</figcaption>
-				</figure>
-				<figure>
+					<footer></footer>
+				</article>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Fort de Pomègues</figcaption>
-				</figure>
-				<figure>
+					<footer></footer>
+				</article>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Îles du Frioul</figcaption>
-				</figure>
-				<figure>
+					<footer></footer>
+				</article>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Parc National des Calanques</figcaption>
-				</figure>
-				<figure>
+					<footer></footer>
+				</article>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Notre-Dame-de-la-Garde</figcaption>
-				</figure>
-				<figure>
+					<footer></footer>
+				</article>
+				<article class="card">
 					<img src="" alt="" />
-					<figcaption>Parc Longchamp</figcaption>
-				</figure>
+					<footer></footer>
+				</article>
 			</div>
 		</section>
 
 		<!--footer-->
-		<footer>
-			<div class="footer">
-				<ul class="footerBlock">
+		<footer class="footer">
+		 	<div class="footerBlock">
+				<ul class="footerBlockList">
 					<li><h3>A propos</h3></li>
-					<li><a href="#">Fonctionnement du site</a></li>
-					<li><a href="#">Conditions générales de vente</a></li>
-					<li><a href="#">Données et confidentialité</a></li>
+					<li><a class="footItem" href="#">Fonctionnement du site</a></li>
+					<li><a class="footItem" href="#">Conditions générales de vente</a></li>
+					<li><a class="footItem" href="#">Données et confidentialité</a></li>
 				</ul>
 			</div>
-			<div class="footer">
-				<ul class="footerBlock">
+			<div class="footerBlock">
+				<ul class="footerBlockList">
 					<li><h3>Nos hébergements</h3></li>
-					<li><a href="#">Charte qualité</a></li>
-					<li><a href="#">Soumettre votre hôtel</a></li>
+					<li><a class="footItem" href="#">Charte qualité</a></li>
+					<li><a class="footItem" href="#">Soumettre votre hôtel</a></li>
 				</ul>
 			</div>
-			<div class="footer">
-				<ul class="footerBlock">
+			<div class="footerBlock">
+				<ul class="footerBlockList">
 					<li><h3>Assistance</h3></li>
-					<li><a href="#">Centre d'aide</a></li>
-					<li><a href="#">Nous contacter</a></li>
+					<li><a class="footItem" href="#">Centre d'aide</a></li>
+					<li><a class="footItem" href="#">Nous contacter</a></li>
 				</ul>
 			</div>
 		</footer>

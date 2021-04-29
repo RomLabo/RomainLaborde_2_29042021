@@ -1,0 +1,94 @@
+body
+{
+    margin-left: 3em;
+    margin-right: 3em;
+    font-family: 'Raleway', sans-serif, Arial;
+}
+
+#header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.headerNavTab
+{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 22em;
+	height: 5em;
+	align-items: baseline;
+    list-style-type: none;
+    font-size: 0.9em;
+}
+
+.tabItemRegister
+{
+	color: #0065FC; 
+	font-weight: bold;
+	text-decoration: none;
+    margin: 2em;
+}
+
+.tabItem
+{
+	text-decoration: none;
+	color: black;
+    margin: 2em; 
+}
+
+
+h2
+{
+    font-size: 1.35em;
+}
+
+#lodging>p
+{
+    font-size: 0.9em;
+}
+
+.lodgingSection
+{
+	display: grid;
+  	grid-template-columns: 2fr 1fr;
+  	grid-gap: 3em;
+}
+
+.lodging
+{
+    background-color: #F2F2F2;
+    border-radius: 1.2em;
+    height: 27em;
+}
+
+.lodgingPop
+{
+    background-color: #F2F2F2;
+    border-radius: 1.2em;
+    height: 27em;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footerBlockList
+{
+    list-style-type: none;
+    text-align: left;
+}    
+
+.footItem
+{
+    text-decoration: none;
+	color: black; 
+}
+
+
