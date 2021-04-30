@@ -55,21 +55,23 @@ h2
 {
 	display: grid;
   	grid-template-columns: 2fr 1fr;
-  	grid-gap: 3em;
+  	gap: 3em;
 }
 
 .lodging
 {
     background-color: #F2F2F2;
     border-radius: 1.2em;
-    height: 27em;
+    height: 35em;
+    padding: 2em;
 }
 
 .lodgingPop
 {
     background-color: #F2F2F2;
     border-radius: 1.2em;
-    height: 27em;
+    height: 35em;
+    padding: 2em;
 }
 
 .footer
@@ -90,5 +92,122 @@ h2
     text-decoration: none;
 	color: black; 
 }
+
+#lodgingTown
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5em;
+}
+
+.card 
+{
+    width: 16em;
+    height: 12em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.card img 
+{
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    object-fit: cover;
+    width: 16em;
+    height: 8em;
+}
+
+.lodgingPop
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+
+.popCard
+{
+    width: 20em;
+    height: 8em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.popCard img
+{
+    border-bottom-left-radius: 0.8em;
+    border-top-left-radius: 0.8em;
+    object-fit: cover;
+    width: 7em;
+    height: 8em;
+}
+
+#activity
+{
+    background-color: #F2F2F2;
+    border-radius: 1.2em;
+    height: 18em;
+    padding: 2em;
+}
+
+.activityCards
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3em;
+}
+
+.actCardXl
+{
+    width: 8em;
+    height: 15em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: 2fr;    
+}
+
+.actCardXl img
+{
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    object-fit: cover;
+    width: 8em;
+    height: 12em;
+}
+
+.actCard 
+{
+    width: 8em;
+    height: 6em;
+    border-radius: 0.8em;
+    padding: 0.3em;
+    background-color: #FFF;
+    display: grid;
+    grid-template-rows: 1fr; 
+}
+
+.actCard img
+{
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    object-fit: cover;
+    width: 8em;
+    height: 4em;
+}
+
+
+
+
+
+
 
 
