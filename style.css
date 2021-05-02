@@ -3,6 +3,8 @@ body
     font-family: 'Raleway', sans-serif, Arial;
 }
 
+/* //////////////////// header ///////////////////// */
+
 #header
 {
     display: flex;
@@ -41,6 +43,7 @@ body
     margin: 2em; 
 }
 
+/* /////////////////// section lodging //////////////////// */
 
 h2
 {
@@ -93,6 +96,12 @@ h2
     gap: 0.5em;
 }
 
+.clickable
+{
+    text-decoration: none;
+    color: #000000;
+}
+
 .card 
 {
     width: 16em;
@@ -133,6 +142,8 @@ h2
     height: 8em;
 }
 
+/* /////////////////// section activity ///////////////// */
+
 #activity
 {
     border-radius: 1.2em;
@@ -149,45 +160,43 @@ h2
     gap: 1em;
 }
 
-.actCardA, .actCardD
+.actCardStyle
 {
     width: 15em;
-    height: 24em;
     border-radius: 0.8em;
     background-color: #FFF;
     display: grid;  
-    box-shadow: 0.1em 0.3em 1em #F2F2F2;
-    border: 0.1em #F2F2F2 solid;  
+    box-shadow: 0.3em 0.5em 1em #F2F2F2;
+    border: 0.1em #F2F2F2 solid;
 }
 
-.actCardA img, .actCardD img
+.actCardA, .actCardD
 {
-    border-top-left-radius: 0.8em;
-    border-top-right-radius: 0.8em;
-    object-fit: cover;
-    width: 15em;
-    height: 20em;
+    height: 24em;  
 }
 
 .actCardB, .actCardC, .actCardE, .actCardF 
 {
-    width: 15em;
     height: 12em;
-    border-radius: 0.8em;
-    background-color: #FFF;
-    display: grid;
     grid-template-rows: 1fr; 
-    box-shadow: 0.1em 0.3em 1em #F2F2F2;
-    border: 0.1em #F2F2F2 solid;
 }
 
-.actCardB img, .actCardC img, .actCardE img, .actCardF img 
+.actCardA img, .actCardD img
+{
+    height: 20em;
+}
+
+.actCardB img, .actCardC img, .actCardE img, .actCardF img
+{
+    height: 8em;
+}
+
+.actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
 {
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     object-fit: cover;
     width: 15em;
-    height: 8em;
 }
 
 .actCardA
@@ -226,6 +235,8 @@ h2
     grid-row: 2;
 }
 
+/* /////////////////// footer ///////////////// */
+
 .foot 
 {
     margin-top: 10em;
@@ -243,11 +254,11 @@ h2
     margin-right: 8em;
 }    
 
-.footItem
+.clickable:hover
 {
-    text-decoration: none;
-	color: black; 
+    color: #0065FC;
 }
+
 
 
     
