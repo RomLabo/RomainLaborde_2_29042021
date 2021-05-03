@@ -65,7 +65,7 @@ h2
 {
 	display: grid;
   	grid-template-columns: 2fr 1fr;
-  	gap: 1em; 
+  	gap: 2em; 
 }
 
 .lodging
@@ -73,7 +73,10 @@ h2
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 35em;
-    padding: 1em;
+    padding-right: 1.5em;
+    padding-left: 2em;
+    padding-top: 1em;
+    margin-top: 1em;
 }
 
 .lodgingPop
@@ -81,11 +84,27 @@ h2
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 35em;
-    padding: 1em;
+    padding-right: 1.5em;
+    padding-left: 2em;
+    padding-top: 1em;
+    margin-top: 1em;
+    /*
+    background-color: #F2F2F2;
+    border-radius: 1.2em;
+    height: 35em;
     width: 22em;
+    padding-right: 1em;
+    padding-left: 2em;
+    padding-top: 1em;
+    
+    margin-top: 1em; */
+}
+
+.lodgingPopCard
+{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0.5em;
+    gap: 1.5em;
 }
 
 #lodgingTown
@@ -93,7 +112,8 @@ h2
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0.5em;
+    gap: 1.5em;
+    margin-bottom: 2em;
 }
 
 .clickable
@@ -104,13 +124,20 @@ h2
 
 .card 
 {
-    width: 16em;
-    height: 12em;
+    width: 14em;
+    height: 11em;
     border-radius: 0.8em;
-    padding: 0.3em;
+    padding: 0.15em;
     background-color: #FFF;
     display: grid;
     grid-template-rows: 2fr 1fr;
+
+}
+
+.card footer
+{
+    font-size: 0.8em;
+
 }
 
 .card img 
@@ -118,13 +145,13 @@ h2
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     object-fit: cover;
-    width: 16em;
-    height: 8em;
+    width: 14em;
+    height: 7em;
 }
 
 .popCard
 {
-    width: 20em;
+    width: 21em;
     height: 8em;
     border-radius: 0.8em;
     padding: 0.3em;
@@ -138,7 +165,7 @@ h2
     border-bottom-left-radius: 0.8em;
     border-top-left-radius: 0.8em;
     object-fit: cover;
-    width: 7em;
+    width: 8em;
     height: 8em;
 }
 
@@ -157,12 +184,12 @@ h2
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1em;
+    gap: 2em;
 }
 
 .actCardStyle
 {
-    width: 15em;
+    width: 18em;
     border-radius: 0.8em;
     background-color: #FFF;
     display: grid;  
@@ -172,23 +199,32 @@ h2
 
 .actCardA, .actCardD
 {
-    height: 24em;  
-}
-
-.actCardB, .actCardC, .actCardE, .actCardF 
-{
-    height: 12em;
-    grid-template-rows: 1fr; 
+    height: 28em;  
 }
 
 .actCardA img, .actCardD img
 {
-    height: 20em;
+    height: 25em;
 }
 
-.actCardB img, .actCardC img, .actCardE img, .actCardF img
+.actCardB img
+{
+    height: 13em;
+}
+
+.actCardC img
+{
+    height: 7em;
+}
+
+.actCardE img
 {
     height: 8em;
+}
+
+.actCardF img
+{
+    height: 10em;
 }
 
 .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
@@ -196,7 +232,7 @@ h2
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     object-fit: cover;
-    width: 15em;
+    width: 18em;
 }
 
 .actCardA
@@ -215,31 +251,35 @@ h2
 {
     grid-column: 2;
     grid-row: 1;
+    height: 16em;
 }
 
 .actCardC
 {
     grid-column: 2;
     grid-row: 2;
+    height: 10em;
 }
 
 .actCardE
 {
     grid-column: 4;
     grid-row: 1;
+    height: 11em;
 }
 
 .actCardF
 {
     grid-column: 4;
     grid-row: 2;
+    height: 13em;
 }
 
 /* /////////////////// footer ///////////////// */
 
 .foot 
 {
-    margin-top: 10em;
+    margin-top: 15em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -251,7 +291,7 @@ h2
 {
     list-style-type: none;
     text-align: left;
-    margin-right: 8em;
+    margin-right: 10em;
 }    
 
 .clickable:hover
