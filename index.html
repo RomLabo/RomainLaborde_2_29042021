@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/371c3c0fc4.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -27,13 +28,13 @@
 		<section id="lodging">
 			<h2>Trouver votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre ville ou en pleine nature</p>
-			<div class="headerForm">
+			<div>
 				<form method="post" action="traitement.php">
-				    <p>
-				        <label for="townChoice"><img src="icons/position.svg" alt="icon" /></label>
-				        <input type="text" name="townChoice" id="townChoice" value="Marseille, France" size="30" maxlength="10" autofocus />
+				    <div class="lodgingForm">
+						<label for="townChoice"><i class="fas fa-map-marker-alt"></i></label>
+				        <input type="text" name="townChoice" id="townChoice" value="Marseille, France" size="30" maxlength="20" />
 				        <input type="submit" value="Rechercher" />
-				    </p>
+					</div>
 				</form>
 			</div>
 			<div class="lodgingFilters">
@@ -56,59 +57,53 @@
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb1.jpg" alt="Une chambre de l'Auberge La Cannebière" />
-									<footer>
-										<h3>Auberge La Cannebière</h3>
-										<p>Nuit à partir de <strong>25€</strong></p>
+									<footer class="footCard">
+										<p><strong>Auberge La Cannebière</strong></br>Nuit à partir de <strong>25€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb2.jpg" alt="Une chambre de l'Hôtel du port" />
-									<footer>
-										<h3>Hôtel du port</h3>
-										<p>Nuit à partir de <strong>52€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel du port</strong></br>Nuit à partir de <strong>52€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb3.jpg" alt="Une chambre de 'Hôtel Les mouettes" />
-									<footer>
-										<h3>Hôtel Les mouettes</h3>
-										<p>Nuit à partir de <strong>76€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel Les mouettes</strong></br>Nuit à partir de <strong>76€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb4.jpg" alt="Une chambre de l'Hôtel de la mer" />
-									<footer>
-										<h3>Hôtel de la mer</h3>
-										<p>Nuit à partir de <strong>46€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel de la mer</strong></br>Nuit à partir de <strong>46€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb5.jpg" alt="Une chambre de l'Auberge Le Panier" />
-									<footer>
-										<h3>Auberge Le Panier</h3>
-										<p>Nuit à partir de <strong>23€</strong></p>
+									<footer class="footCard">
+										<p><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb6.jpg" alt="Hôtel chez Amina" />
-									<footer>
-										<h3>Hôtel chez Amina</h3>
-										<p>Nuit à partir de <strong>96€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel chez Amina</strong></br>Nuit à partir de <strong>96€</strong></p>
 									</footer>
 								</a>
 							</article>	
 						</div>
-						<a href="#" class="clickable">Afficher plus</a>
+						<a href="#" class="clickable text">Afficher plus</a>
 					</div>
 				</article>
 				<aside>
@@ -118,27 +113,24 @@
 							<article>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop1.jpg" alt="Une chambre de l'Hôtel Le soleil du matin" />
-									<footer>
-										<h3>Hôtel Le soleil du matin</h3>
-										<p>Nuit à partir de <strong>128€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel Le soleil du </br>matin</strong></br>Nuit à partir de <strong>128€</strong></p>
 									</footer>
 								</a>
 							</article>						
 							<article>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop2.jpg" alt="Une chambre de Au coeur de l'eau Chambre d'hôtes" />
-									<footer>
-										<h3>Au coeur de l'eau Chambre d'hôtes</h3>
-										<p>Nuit à partir de <strong>71€</strong></p>
+									<footer class="footCard">
+										<p><strong>Au coeur de l'eau Chambre d'hôtes</strong></br>Nuit à partir de <strong>71€</strong></p>
 									</footer>
 								</a>
 							</article>
 							<article>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop3.jpg" alt="Une chambre de l'Hôtel Tout bleu et Blanc" />
-									<footer>
-										<h3>Hôtel Tout bleu et Blanc</h3>
-										<p>Nuit à partir de <strong>68€</strong></p>
+									<footer class="footCard">
+										<p><strong>Hôtel Tout bleu et </br>Blanc</strong></br>Nuit à partir de <strong>68€</strong></p>
 									</footer>
 								</a>
 							</article>
@@ -155,7 +147,7 @@
 				<article class="actCardA actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct1.jpg" alt="Photo du Vieux Port" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Vieux Port</h3>
 						</footer>
 					</a>
@@ -163,7 +155,7 @@
 				<article class="actCardB actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct2.jpg" alt="Photo du Fort de Pomègues" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Fort de Pomègues</h3>
 						</footer>
 					</a>
@@ -171,7 +163,7 @@
 				<article class="actCardC actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct3.jpg" alt="Photo de l'Îles du Frioul" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Îles du Frioul</h3>
 						</footer>
 					</a>
@@ -179,7 +171,7 @@
 				<article class="actCardD actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct4.jpg" alt="Photo du Parc National des Calanques" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Parc National des Calanques</h3>
 						</footer>
 					</a>
@@ -187,7 +179,7 @@
 				<article class="actCardE actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct5.jpg" alt="Photo de Notre-Dame-de-la-Garde" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Notre-Dame-de-la-Garde</h3>
 						</footer>
 					</a>
@@ -195,7 +187,7 @@
 				<article class="actCardF actCardStyle">
 					<a href="#" class="clickable">
 						<img src="img/act/imgAct6.jpg" alt="Photo du Parc Longchamp" />
-						<footer>
+						<footer class="footActCard">
 							<h3>Parc Longchamp</h3>
 						</footer>
 					</a>

@@ -44,6 +44,47 @@ body
 }
 
 /* /////////////////// section lodging //////////////////// */
+.lodgingForm
+{
+    border: 0.05em #F2F2F2 solid; 
+    border-radius: 0.8em;
+    background-color: #F2F2F2;
+    width: 26em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label
+{
+    margin-left: 1em;
+    width: 2em;
+}
+
+input[type=text]
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 3em;
+
+}
+input[type=submit]
+{
+    border-top-right-radius: 00.8em;
+    border-bottom-right-radius: 0.8em;
+    background-color: #0065FC;
+    color: #FFF;
+    width: 10em;
+    height: 3.4em;
+    font-weight: bold;
+
+}
+strong
+{
+    font-size: 1em;
+}
 
 h2
 {
@@ -88,16 +129,6 @@ h2
     padding-left: 2em;
     padding-top: 1em;
     margin-top: 1em;
-    /*
-    background-color: #F2F2F2;
-    border-radius: 1.2em;
-    height: 35em;
-    width: 22em;
-    padding-right: 1em;
-    padding-left: 2em;
-    padding-top: 1em;
-    
-    margin-top: 1em; */
 }
 
 .lodgingPopCard
@@ -105,6 +136,24 @@ h2
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5em;
+}
+
+.footCard
+{
+    margin-left: 0.5em;
+}
+
+.rating a 
+{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.5em;
+    transition: color .4s;
+}
+.rating a:hover 
+{
+    color: #0065FC;
+    cursor: pointer;
 }
 
 #lodgingTown
@@ -122,6 +171,11 @@ h2
     color: #000000;
 }
 
+.text
+{
+    font-weight: bold;
+}
+
 .card 
 {
     width: 14em;
@@ -131,13 +185,6 @@ h2
     background-color: #FFF;
     display: grid;
     grid-template-rows: 2fr 1fr;
-
-}
-
-.card footer
-{
-    font-size: 0.8em;
-
 }
 
 .card img 
@@ -195,6 +242,12 @@ h2
     display: grid;  
     box-shadow: 0.3em 0.5em 1em #F2F2F2;
     border: 0.1em #F2F2F2 solid;
+    padding-bottom: 0.8em;
+}
+
+.footActCard
+{
+    margin-left: 1.2em;
 }
 
 .actCardA, .actCardD
