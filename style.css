@@ -4,7 +4,6 @@ body
 }
 
 /* //////////////////// header ///////////////////// */
-
 #header
 {
     display: flex;
@@ -15,7 +14,6 @@ body
     margin-right: 2em;
     padding-right: 3em;
 }
-
 .headerNavTab
 {
     display: flex;
@@ -27,7 +25,6 @@ body
     list-style-type: none;
     font-size: 0.9em;
 }
-
 .tabItemRegister
 {
 	color: #0065FC; 
@@ -35,7 +32,6 @@ body
 	text-decoration: none;
     margin: 2em;
 }
-
 .tabItem
 {
 	text-decoration: none;
@@ -56,13 +52,11 @@ body
     justify-content: space-between;
     align-items: center;
 }
-
 label
 {
     margin-left: 1em;
     width: 2em;
 }
-
 input[type=text]
 {
     font-size: 0.8em;
@@ -85,30 +79,25 @@ strong
 {
     font-size: 1em;
 }
-
 h2
 {
     font-size: 1.35em;
 }
-
 #lodging
 {
     margin-left: 2em;
     margin-right: 2em;
 }
-
 .lodgingFilters
 {
     font-size: 0.9em;
 }
-
 .lodgingSection
 {
 	display: grid;
   	grid-template-columns: 2fr 1fr;
   	gap: 2em; 
 }
-
 .lodging
 {
     background-color: #F2F2F2;
@@ -119,7 +108,6 @@ h2
     padding-top: 1em;
     margin-top: 1em;
 }
-
 .lodgingPop
 {
     background-color: #F2F2F2;
@@ -130,19 +118,16 @@ h2
     padding-top: 1em;
     margin-top: 1em;
 }
-
 .lodgingPopCard
 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5em;
 }
-
 .footCard
 {
     margin-left: 0.5em;
 }
-
 .rating a 
 {
     color: #aaa;
@@ -155,7 +140,6 @@ h2
     color: #0065FC;
     cursor: pointer;
 }
-
 #lodgingTown
 {
     display: grid;
@@ -164,18 +148,15 @@ h2
     gap: 1.5em;
     margin-bottom: 2em;
 }
-
 .clickable
 {
     text-decoration: none;
     color: #000000;
 }
-
 .text
 {
     font-weight: bold;
 }
-
 .card 
 {
     width: 14em;
@@ -186,7 +167,6 @@ h2
     display: grid;
     grid-template-rows: 2fr 1fr;
 }
-
 .card img 
 {
     border-top-left-radius: 0.8em;
@@ -195,7 +175,6 @@ h2
     width: 14em;
     height: 7em;
 }
-
 .popCard
 {
     width: 21em;
@@ -206,7 +185,6 @@ h2
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
-
 .popCard img
 {
     border-bottom-left-radius: 0.8em;
@@ -217,7 +195,6 @@ h2
 }
 
 /* /////////////////// section activity ///////////////// */
-
 #activity
 {
     border-radius: 1.2em;
@@ -225,7 +202,6 @@ h2
     padding: 2em;
     margin-top: 1em;
 }
-
 .activityCards
 {
     display: grid;
@@ -233,7 +209,6 @@ h2
     grid-template-rows: 1fr 1fr;
     gap: 2em;
 }
-
 .actCardStyle
 {
     width: 18em;
@@ -244,42 +219,34 @@ h2
     border: 0.1em #F2F2F2 solid;
     padding-bottom: 0.8em;
 }
-
 .footActCard
 {
     margin-left: 1.2em;
 }
-
 .actCardA, .actCardD
 {
-    height: 28em;  
+    height: 29em;  
 }
-
 .actCardA img, .actCardD img
 {
-    height: 25em;
+    height: 26em;
 }
-
 .actCardB img
 {
     height: 13em;
 }
-
 .actCardC img
 {
     height: 7em;
 }
-
 .actCardE img
 {
     height: 8em;
 }
-
 .actCardF img
 {
     height: 10em;
 }
-
 .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
 {
     border-top-left-radius: 0.8em;
@@ -287,40 +254,34 @@ h2
     object-fit: cover;
     width: 18em;
 }
-
 .actCardA
 {
     grid-column: 1;
     grid-row: 1 / 3;
 }
-
 .actCardD
 {
     grid-column: 3;
     grid-row: 1 / 3;
 }
-
 .actCardB
 {
     grid-column: 2;
     grid-row: 1;
     height: 16em;
 }
-
 .actCardC
 {
     grid-column: 2;
     grid-row: 2;
     height: 10em;
 }
-
 .actCardE
 {
     grid-column: 4;
     grid-row: 1;
     height: 11em;
 }
-
 .actCardF
 {
     grid-column: 4;
@@ -329,7 +290,6 @@ h2
 }
 
 /* /////////////////// footer ///////////////// */
-
 .foot 
 {
     margin-top: 15em;
@@ -338,15 +298,12 @@ h2
     justify-content: flex-start;
     background-color: #F2F2F2;
 }
-
-
 .footerBlockList
 {
     list-style-type: none;
     text-align: left;
     margin-right: 10em;
 }    
-
 .clickable:hover
 {
     color: #0065FC;
