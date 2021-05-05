@@ -128,18 +128,6 @@ h2
 {
     margin-left: 0.5em;
 }
-.rating a 
-{
-    color: #aaa;
-    text-decoration: none;
-    font-size: 0.5em;
-    transition: color .4s;
-}
-.rating a:hover 
-{
-    color: #0065FC;
-    cursor: pointer;
-}
 #lodgingTown
 {
     display: grid;
@@ -204,10 +192,10 @@ h2
 }
 .activityCards
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 .actCardStyle
 {
@@ -241,52 +229,36 @@ h2
 }
 .actCardE img
 {
-    height: 8em;
+    height: 9em;
 }
 .actCardF img
 {
-    height: 10em;
+    height: 11em;
 }
 .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
 {
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
     object-fit: cover;
-    width: 18em;
-}
-.actCardA
-{
-    grid-column: 1;
-    grid-row: 1 / 3;
-}
-.actCardD
-{
-    grid-column: 3;
-    grid-row: 1 / 3;
+    width: 100%;
 }
 .actCardB
 {
-    grid-column: 2;
-    grid-row: 1;
     height: 16em;
 }
 .actCardC
 {
-    grid-column: 2;
-    grid-row: 2;
+    margin-top: 2em;
     height: 10em;
 }
 .actCardE
 {
-    grid-column: 4;
-    grid-row: 1;
-    height: 11em;
+    height: 12em;
 }
 .actCardF
 {
-    grid-column: 4;
-    grid-row: 2;
-    height: 13em;
+    margin-top: 2em;
+    height: 14em;
 }
 
 /* /////////////////// footer ///////////////// */
@@ -304,7 +276,7 @@ h2
     text-align: left;
     margin-right: 10em;
 }    
-.clickable:hover
+.clickable:hover, .tabItem:hover
 {
     color: #0065FC;
 }
