@@ -293,6 +293,53 @@ h2
 }
 
 
+@media screen and (max-width: 375px)
+{
+    body 
+    {
+        width: auto;
+    }
+    #header
+    {
+        justify-content: flex-start;
+    }
+    .headerNavTab
+    {
+        height: auto;
+        flex-wrap: wrap-reverse;
+    }
+    #activity
+    {
+        height: auto;
+    }
+    .activityCards
+    {
+        flex-direction: column;
+    }
+    .actCardStyle
+    {
+        width: 80vw;
+        height: 12em;
+        margin-top: 2em;
+    }
+    .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
+    {
+        height: 10em;
+    }
+    h3 
+    {
+        font-size: 1em;
+    }
+    .foot
+    {  
+        flex-direction: column;
+        height: auto;
+    }
+    .footerBlockList
+    {
+        font-size: 1.2em;
+    }
+}
 
     
 
