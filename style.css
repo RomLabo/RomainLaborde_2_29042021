@@ -1,6 +1,10 @@
 body
 {
     font-family: 'Raleway', sans-serif, Arial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 3em;
 }
 
 /* //////////////////// header ///////////////////// */
@@ -10,9 +14,9 @@ body
     flex-direction: row;
     justify-content: space-between;
 	align-items: center;
-    margin-left: 2em;
-    margin-right: 2em;
     padding-right: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .headerNavTab
 {
@@ -20,7 +24,7 @@ body
 	flex-direction: row;
 	justify-content: space-around;
 	width: 22em;
-	height: 5em;
+	height: 10vh;
 	align-items: baseline;
     list-style-type: none;
     font-size: 0.9em;
@@ -40,6 +44,12 @@ body
 }
 
 /* /////////////////// section lodging //////////////////// */
+#lodging
+{
+    height: auto;
+    margin-right: 2em;
+    margin-left: 2em;
+}
 .lodgingForm
 {
     border: 0.05em #F2F2F2 solid; 
@@ -82,11 +92,6 @@ strong
 h2
 {
     font-size: 1.35em;
-}
-#lodging
-{
-    margin-left: 2em;
-    margin-right: 2em;
 }
 .lodgingFilters
 {
@@ -185,10 +190,8 @@ h2
 /* /////////////////// section activity ///////////////// */
 #activity
 {
-    border-radius: 1.2em;
-    height: 20em;
+    height: 32em;
     padding: 2em;
-    margin-top: 1em;
 }
 .activityCards
 {
@@ -264,17 +267,20 @@ h2
 /* /////////////////// footer ///////////////// */
 .foot 
 {
-    margin-top: 15em;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: #F2F2F2;
 }
+.footerBlock
+{
+    margin-right: 12em;
+}
 .footerBlockList
 {
     list-style-type: none;
     text-align: left;
-    margin-right: 10em;
 }    
 .clickable:hover, .tabItem:hover
 {
