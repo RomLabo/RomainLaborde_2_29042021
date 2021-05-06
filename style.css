@@ -1,10 +1,9 @@
 body
 {
     font-family: 'Raleway', sans-serif, Arial;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* //////////////////// header ///////////////////// */
@@ -72,13 +71,15 @@ input[type=text]
     font-size: 0.8em;
     font-weight: bold;
     height: 3em;
+    border: none;
 
 }
-input[type=submit]
+button
 {
     border-top-right-radius: 00.8em;
     border-bottom-right-radius: 0.8em;
     background-color: #0065FC;
+    border: none;
     color: #FFF;
     width: 10em;
     height: 3.4em;
@@ -95,9 +96,9 @@ h2
 }
 .lodgingSection
 {
-	display: grid;
-  	grid-template-columns: 2fr 1fr;
-  	gap: 2em; 
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 .lodging
 {
@@ -140,11 +141,10 @@ h2
 }
 #lodgingTown
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.5em;
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .clickable
 {
