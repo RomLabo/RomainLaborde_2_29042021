@@ -5,8 +5,9 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet" />
 		<script src="https://kit.fontawesome.com/371c3c0fc4.js" crossorigin="anonymous"></script>
     </head>
 
@@ -47,109 +48,102 @@
 						<a href="#"></a>
 					</div>
 				</form>
-				<p><img src="icons/iconLogo.svg" alt="Icone info" />Plus de 500 logements sont disponibles dans cette ville</p>
+				<div id="info">
+					<div class="infoCircle">i</div>
+					<span>Plus de 500 logements sont disponibles dans cette ville</span>
+				</div>
 			</div>
 			<div class="lodgingSection">
 				<article>
 					<div class="lodging">
 						<h2>Hébergements à Marseille</h2>
 						<div id="lodgingTown">
-							<article class="card">
-								<a href="#" class="clickable">
+							<div class="card">
+								<a href="#" class="clickable elementCard">
 									<img src="img/heb/imgHeb1.jpg" alt="Une chambre de l'Auberge La Cannebière" />
-									<footer class="footCard">
-										<h4>Auberge La Cannebière</h4>
-										<p>Nuit à partir de <strong>25€</strong></p>
-										<div>
-											<i class="fas fa-star check"></i>
-											<i class="fas fa-star check"></i>
-											<i class="fas fa-star check"></i>
-											<i class="fas fa-star check"></i>
-											<i class="fas fa-star"></i>
+									<div class="infoCard">
+										<span class="bold">Auberge La Cannebière</span> 
+										<span>Nuit à partir de <strong>25€</strong></span>
+										<div class="stars">
+											<i class="fas fa-star uncheck check"></i>
+											<i class="fas fa-star uncheck check"></i>
+											<i class="fas fa-star uncheck check"></i>
+											<i class="fas fa-star uncheck check"></i>
+											<i class="fas fa-star uncheck"></i>
 										</div>
-									</footer>
+									</div>
 								</a>
-							</article>
-							<article class="card">
+							</div>
+							<div class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb2.jpg" alt="Une chambre de l'Hôtel du port" />
-									<footer class="footCard">
-										<h4>Hôtel du port</h4>
-										<p>Nuit à partir de <strong>52€</strong></p>
-									</footer>
+									<span class="bold">Hôtel du port</span>
+									<p>Nuit à partir de <strong>52€</strong></p>
 								</a>
-							</article>
-							<article class="card">
+							</div>
+							<div class="card">
 								<a href="#" class="clickable">
-									<img src="img/heb/imgHeb3.jpg" alt="Une chambre de 'Hôtel Les mouettes" />
-									<footer class="footCard">
-										<h4>Hôtel Les mouettes</h4>
-										<p>Nuit à partir de <strong>76€</strong></p>
-									</footer>
+									<img src="img/heb/imgHeb3.jpg" alt="Une chambre de l'Hôtel Les mouettes" />
+									<span class="bold">Hôtel Les mouettes</span>
+									<p>Nuit à partir de <strong>76€</strong></p>
 								</a>
-							</article>
-							<article class="card">
+							</div>
+							<div class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb4.jpg" alt="Une chambre de l'Hôtel de la mer" />
-									<footer class="footCard">
-										<h4>Hôtel de la mer</h4>
-										<p>Nuit à partir de <strong>46€</strong></p>
-									</footer>
+									<span class="bold">Hôtel de la mer</span>
+									<p>Nuit à partir de <strong>46€</strong></p>
 								</a>
-							</article>
-							<article class="card">
+							</div>
+							<div class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb5.jpg" alt="Une chambre de l'Auberge Le Panier" />
-									<footer class="footCard">
-										<h4>Auberge Le Panier</h4>
-										<p>Nuit à partir de <strong>23€</strong></p>
-									</footer>
+									<span class="bold">Auberge Le Panier</span>
+									<p>Nuit à partir de <strong>23€</strong></p>
 								</a>
-							</article>
-							<article class="card">
+							</div>
+							<div class="card">
 								<a href="#" class="clickable">
 									<img src="img/heb/imgHeb6.jpg" alt="Hôtel chez Amina" />
-									<footer class="footCard">
-										<h4>Hôtel chez Amina</h4>
-										<p>Nuit à partir de <strong>96€</strong></p>
-									</footer>
+									<span class="bold">Hôtel chez Amina</span>
+									<p>Nuit à partir de <strong>96€</strong></p>
 								</a>
-							</article>	
+							</div>	
 						</div>
-						<a href="#" class="clickable text">Afficher plus</a>
+						<a href="#" class="clickable bold">Afficher plus</a>
 					</div>
 				</article>
 				<aside>
 					<div class="lodgingPop">
 						<h2>Les plus populaires</h2>
 						<div class="lodgingPopCard">
-							<article>
+							<div>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop1.jpg" alt="Une chambre de l'Hôtel Le soleil du matin" />
-									<footer class="footCard">
-										<h4>Hôtel Le soleil du <br>matin</h4>
+									<div>
+										<span>Hôtel Le soleil du <br>matin</span>
 										<p>Nuit à partir de <strong>128€</strong></p>
-									</footer>
+									</div>
 								</a>
-							</article>						
-							<article>
+							</div>						
+							<div>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop2.jpg" alt="Une chambre de Au coeur de l'eau Chambre d'hôtes" />
-									<footer class="footCard">
-										<h4>Au coeur de l'eau Chambre d'hôtes</h4>
+									<div>
+										<span>Au coeur de l'eau Chambre d'hôtes</span>
 										<p>Nuit à partir de <strong>71€</strong></p>
-									</footer>
+									</div>
 								</a>
-							</article>
-							<article>
+							</div>
+							<div>
 								<a href="#" class="clickable popCard">
 									<img src="img/heb/imgPop3.jpg" alt="Une chambre de l'Hôtel Tout bleu et Blanc" />
-									<footer class="footCard">
-										<h4>Hôtel Tout bleu et <br>Blanc</h4>
+									<div>
+										<span>Hôtel Tout bleu et <br>Blanc</span>
 										<p>Nuit à partir de <strong>68€</strong></p>
-									</footer>
+									</div>
 								</a>
-							</article>
+							</div>
 						</div>
 					</div>
 				</aside>

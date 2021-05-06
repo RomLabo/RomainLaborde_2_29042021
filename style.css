@@ -86,6 +86,25 @@ button
     font-weight: bold;
 
 }
+#info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.infoCircle
+{
+    border: 0.2em #DEEBFF solid;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    color: #0065FC;
+    font-family: Georgia;
+    font-weight: 800;
+    margin-right: 0.5em;
+}
 h2
 {
     font-size: 1.35em;
@@ -99,13 +118,15 @@ h2
 	display: flex;
     flex-direction: row;
     justify-content: space-between; 
+    gap: 2em;
 }
 .lodging
 {
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 35em;
-    padding-right: 1.5em;
+    width: 48em;
+    padding-right: 2em;
     padding-left: 2em;
     padding-top: 1em;
     margin-top: 1em;
@@ -115,6 +136,7 @@ h2
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 35em;
+    width: 22em;
     padding-right: 1.5em;
     padding-left: 2em;
     padding-top: 1em;
@@ -126,14 +148,13 @@ h2
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5em;
 }
-.footCard
+.stars
 {
-    margin-left: 0.5em;
+    font-size: 0.8em;
 }
-.fas
+.uncheck
 {
     color: #DEEBFF;
-    font-size: 0.8em;
 }
 .check
 {
@@ -144,26 +165,38 @@ h2
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 1.5em;
 }
 .clickable
 {
     text-decoration: none;
     color: #000000;
 }
-.text
+.elementCard
+{
+    display: flex;
+    flex-direction: column;
+}
+.infoCard
+{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.bold
 {
     font-weight: bold;
 }
 .card 
 {
     width: 14em;
-    height: 11em;
+    height: 12em;
     border-radius: 0.8em;
-    padding: 0.15em;
+    padding: 0.3em;
     background-color: #FFF;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
 }
 .card img 
 {
