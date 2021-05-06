@@ -85,10 +85,6 @@ input[type=submit]
     font-weight: bold;
 
 }
-strong
-{
-    font-size: 1em;
-}
 h2
 {
     font-size: 1.35em;
@@ -132,6 +128,15 @@ h2
 .footCard
 {
     margin-left: 0.5em;
+}
+.fas
+{
+    color: #DEEBFF;
+    font-size: 0.8em;
+}
+.check
+{
+    color: #0065FC;
 }
 #lodgingTown
 {
