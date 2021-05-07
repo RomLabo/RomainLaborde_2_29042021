@@ -4,6 +4,9 @@ body
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 3em;
+    margin-left: 0em;
+    margin-right: 0em;
 }
 
 /* //////////////////// header ///////////////////// */
@@ -63,16 +66,24 @@ body
 }
 label
 {
-    margin-left: 1em;
-    width: 2em;
+    margin-left: 1.2em;
+    width: 2.2em;
 }
 input[type=text]
 {
     font-size: 0.8em;
-    font-weight: bold;
-    height: 3em;
+    padding-left: 1em;
+    height: 97%;
     border: none;
 
+}
+::placeholder
+{
+    color: #000;
+    opacity: 1;
+    font-weight: 800;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif, Arial;
 }
 button
 {
@@ -83,7 +94,8 @@ button
     color: #FFF;
     width: 10em;
     height: 3.4em;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif, Arial;
+    font-size: 0.9em;
 
 }
 #info
@@ -117,40 +129,44 @@ h2
 {
 	display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-around; 
     gap: 2em;
 }
 .lodging
 {
     background-color: #F2F2F2;
     border-radius: 1.2em;
-    height: 35em;
+    height: 36em;
     width: 48em;
     padding-right: 2em;
     padding-left: 2em;
-    padding-top: 1em;
+    padding-top: 2em;
     margin-top: 1em;
 }
 .lodgingPop
 {
     background-color: #F2F2F2;
     border-radius: 1.2em;
-    height: 35em;
+    height: 36em;
     width: 22em;
-    padding-right: 1.5em;
+    padding-right: 1em;
     padding-left: 2em;
-    padding-top: 1em;
+    padding-top: 2em;
     margin-top: 1em;
 }
 .lodgingPopCard
 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1.5em;
+    gap: 2em;
 }
 .stars
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+.popStars
+{
+    font-size: 0.9em;
 }
 .uncheck
 {
@@ -164,9 +180,10 @@ h2
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5em;
+    margin-bottom: 3em;
 }
 .clickable
 {
@@ -180,28 +197,31 @@ h2
 }
 .infoCard
 {
-    margin-left: 0.5em;
-    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-top: 0.3em;
     display: flex;
     flex-direction: column;
-    gap: 0.4em;
+    gap: 0.3em;
+    font-size: 0.8em;
+}
+.infoCardPop
+{
+    margin-left: 1em;
+    margin-top: 0.6em;
+    margin-bottom: 00.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 0.8em;
 }
 .bold
 {
     font-weight: bold;
 }
-.boxCard
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.5em;
-}
 .card 
 {
     width: 14em;
-    height: 12em;
+    height: 11em;
     border-radius: 0.8em;
     padding: 0.3em;
     background-color: #FFF;
@@ -214,9 +234,13 @@ h2
     width: 14em;
     height: 7em;
 }
+h3
+{
+    margin: 0em;
+}
 .popCard
 {
-    width: 21em;
+    width: 20em;
     height: 8em;
     border-radius: 0.8em;
     padding: 0.3em;
@@ -252,12 +276,13 @@ h2
     border-radius: 0.8em;
     background-color: #FFF;
     box-shadow: 0.3em 0.5em 1em #F2F2F2;
-    border: 0.1em #F2F2F2 solid;
     padding-bottom: 0.8em;
 }
-.footActCard
+.infoActCard
 {
-    margin-left: 1.2em;
+    margin-left: 1em;
+    margin-top: 0.8em;
+    font-size: 1em;
 }
 .actCardA, .actCardD
 {
