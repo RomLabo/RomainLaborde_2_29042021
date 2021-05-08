@@ -98,6 +98,41 @@ button
     font-size: 0.9em;
 
 }
+.lodgingFilters
+{
+    height: 10em;
+}
+.kl 
+{
+    width: 15em;
+    height: 5em;
+}
+.filt 
+{
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;*/
+    height: 3em;
+    width: 12em;
+    border: 0.2em #d9d9d9 solid;
+    border-radius: 3em;
+    display: inline-block;
+}
+.filter 
+{    
+    font-size: 1.2em;
+}
+.iconFilter
+{
+    float: left;
+    border: 0.5em #DEEBFF solid; 
+    border-radius: 3em;
+    background-color: #DEEBFF;
+    height: 3em;
+    width: 3em;
+}
 #info
 {
     display: flex;
