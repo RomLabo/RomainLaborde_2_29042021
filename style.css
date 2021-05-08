@@ -4,7 +4,6 @@ body
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 3em;
     margin-left: 0em;
     margin-right: 0em;
 }
@@ -17,8 +16,8 @@ body
     justify-content: space-between;
 	align-items: center;
     padding-right: 3em;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
 }
 .headerNavTab
 {
@@ -49,13 +48,13 @@ body
 #lodging
 {
     height: auto;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
 }
 .lodgingForm
 {
     border: 0.05em #F2F2F2 solid; 
-    border-radius: 0.8em;
+    border-radius: 1em;
     background-color: #F2F2F2;
     width: 26em;
     height: 3em;
@@ -87,8 +86,8 @@ input[type=text]
 }
 button
 {
-    border-top-right-radius: 00.8em;
-    border-bottom-right-radius: 0.8em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
     background-color: #0065FC;
     border: none;
     color: #FFF;
@@ -96,42 +95,69 @@ button
     height: 3.4em;
     font-family: 'Raleway', sans-serif, Arial;
     font-size: 0.9em;
-
+    font-weight: 700;
+}
+.buttonSize
+{
+    font-size: 1.1em;
 }
 .lodgingFilters
 {
     height: 10em;
-}
-.kl 
-{
-    width: 15em;
-    height: 5em;
-}
-.filt 
-{
-    /*display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2em;
     align-items: center;
-    gap: 1em;*/
-    height: 3em;
-    width: 12em;
-    border: 0.2em #d9d9d9 solid;
-    border-radius: 3em;
-    display: inline-block;
 }
-.filter 
+.filter  
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    height: 3em;
+    border-bottom: 0.2em #d9d9d9 solid;
+    border-top: 0.2em #d9d9d9 solid;
+    border-right: 0.2em #d9d9d9 solid; 
+    border-radius: 3em;
+    border-left: 0.2 #DEEBFF solid;
+}
+.infoFilter 
 {    
     font-size: 1.2em;
 }
-.iconFilter
+.economicFilterSize
 {
-    float: left;
-    border: 0.5em #DEEBFF solid; 
+    width: 13em;
+}
+.familyFilterSize
+{
+    width: 10.5em;
+}
+.romanticFilterSize
+{
+    width: 12.5em;
+}
+.animalFilterSize
+{
+    width: 16em;
+}
+.iconFilter
+{ 
     border-radius: 3em;
     background-color: #DEEBFF;
-    height: 3em;
-    width: 3em;
+    height: 3.2em;
+    width: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+.iconSize
+{
+    font-size: 1.4em;
 }
 #info
 {
@@ -164,8 +190,9 @@ h2
 {
 	display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-between; 
     gap: 2em;
+    margin-top: 2em;
 }
 .lodging
 {
@@ -177,6 +204,14 @@ h2
     padding-left: 2em;
     padding-top: 2em;
     margin-top: 1em;
+}
+.lodgingPopHeader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2em;
 }
 .lodgingPop
 {
@@ -251,7 +286,7 @@ h2
 }
 .bold
 {
-    font-weight: bold;
+    font-weight: 800;
 }
 .card 
 {
@@ -296,7 +331,9 @@ h3
 #activity
 {
     height: 32em;
-    padding: 2em;
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 .activityCards
 {
@@ -307,7 +344,7 @@ h3
 }
 .actCardStyle
 {
-    width: 18em;
+    width: 20em;
     border-radius: 0.8em;
     background-color: #FFF;
     box-shadow: 0.3em 0.5em 1em #F2F2F2;
@@ -372,7 +409,8 @@ h3
 /* /////////////////// footer ///////////////// */
 .foot 
 {
-    height: 20vh;
+    margin-top: 5em;
+    height: 10em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
