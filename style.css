@@ -8,6 +8,33 @@ body
     margin-right: 0em;
     margin-bottom: 0em;
 }
+.flexCol
+{
+    display: flex;
+    flex-direction: column;
+}
+.flexRow
+{
+    display: flex;
+    flex-direction: row;
+}
+.blue 
+{
+    color: #0065FC;
+}
+.gray
+{
+    color: #DEEBFF;
+}
+.bold
+{
+    font-weight: 800;
+}
+.clickable
+{
+    text-decoration: none;
+    color: #000000;
+}
 
 /* //////////////////// header ///////////////////// */
 #header
@@ -34,15 +61,11 @@ body
 }
 .tabItemRegister
 {
-	color: #0065FC; 
-	font-weight: bold;
 	text-decoration: none;
     margin: 2em;
 }
 .tabItem
 {
-	text-decoration: none;
-	color: black;
     margin: 2em; 
 }
 
@@ -59,14 +82,12 @@ h1
 }
 .lodgingForm
 {
-    border: 0.05em #F2F2F2 solid; 
+    border: 0.08em #F2F2F2 solid; 
     border-radius: 1em;
     background-color: #F2F2F2;
     margin-top: 1.5em;
     width: 26em;
     height: 3em;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -99,7 +120,7 @@ button
     border: none;
     color: #FFF;
     width: 10em;
-    height: 3.4em;
+    height: 3.5em;
     font-family: 'Raleway', sans-serif, Arial;
     font-size: 0.9em;
     font-weight: 700;
@@ -111,16 +132,12 @@ button
 .lodgingFilters
 {
     height: 7em;
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     gap: 2em;
     align-items: center;
 }
 .filter  
 {
-    display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 1em;
@@ -155,12 +172,11 @@ button
 { 
     border-radius: 3em;
     background-color: #DEEBFF;
-    height: 3.2em;
-    width: 3.2em;
+    height: 3.4em;
+    width: 3.4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0065FC;
 }
 .iconSize
 {
@@ -168,8 +184,6 @@ button
 }
 #info
 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .infoCircle
@@ -180,9 +194,7 @@ button
     width: 1.2em;
     height: 1.2em;
     text-align: center;
-    color: #0065FC;
     font-family: Georgia;
-    font-weight: 800;
     margin-right: 0.5em;
 }
 h2
@@ -214,8 +226,6 @@ h2
 }
 .lodgingPopHeader
 {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-right: 2em;
@@ -241,18 +251,6 @@ h2
 {
     font-size: 0.9em;
 }
-.popStars
-{
-    font-size: 0.9em;
-}
-.uncheck
-{
-    color: #DEEBFF;
-}
-.check
-{
-    color: #0065FC;
-}
 #lodgingTown
 {
     display: flex;
@@ -262,22 +260,10 @@ h2
     gap: 1.5em;
     margin-bottom: 3em;
 }
-.clickable
-{
-    text-decoration: none;
-    color: #000000;
-}
-.elementCard
-{
-    display: flex;
-    flex-direction: column;
-}
 .infoCard
 {
     margin-left: 1em;
     margin-top: 0.3em;
-    display: flex;
-    flex-direction: column;
     gap: 0.3em;
     font-size: 0.8em;
 }
@@ -286,18 +272,12 @@ h2
     margin-left: 1em;
     margin-top: 0.6em;
     margin-bottom: 00.6em;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     font-size: 0.8em;
 }
 .titleCardPop>h3
 {
     margin-bottom: 0.5em;
-}
-.bold
-{
-    font-weight: 800;
 }
 .card 
 {
@@ -326,8 +306,6 @@ h3
     border-radius: 0.8em;
     padding: 0.3em;
     background-color: #FFF;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
 }
 .popCard img
 {
@@ -364,15 +342,6 @@ h3
 }
 .actCardBC
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2em; 
-}
-.actCardEF
-{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     gap: 2em; 
 }
@@ -382,11 +351,11 @@ h3
     margin-top: 0.8em;
     font-size: 1em;
 }
-.actCardA, .actCardD
+.actCardA
 {
     height: 27em;  
 }
-.actCardA img, .actCardD img
+.actCardA img
 {
     height: 24.5em;
 }
@@ -406,7 +375,7 @@ h3
 {
     height: 10.5em;
 }
-.actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
+.imgSetting
 {
     border-top-left-radius: 0.8em;
     border-top-right-radius: 0.8em;
