@@ -6,6 +6,7 @@ body
     flex-wrap: wrap;
     margin-left: 0em;
     margin-right: 0em;
+    margin-bottom: 0em;
 }
 
 /* //////////////////// header ///////////////////// */
@@ -18,6 +19,7 @@ body
     padding-right: 3em;
     margin-right: 3em;
     margin-left: 3em;
+    padding-top: 2em;
 }
 .headerNavTab
 {
@@ -51,11 +53,16 @@ body
     margin-right: 3em;
     margin-left: 3em;
 }
+h1
+{
+    margin-bottom: 0.3em;
+}
 .lodgingForm
 {
     border: 0.05em #F2F2F2 solid; 
     border-radius: 1em;
     background-color: #F2F2F2;
+    margin-top: 1.5em;
     width: 26em;
     height: 3em;
     display: flex;
@@ -103,7 +110,7 @@ button
 }
 .lodgingFilters
 {
-    height: 10em;
+    height: 7em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -126,23 +133,23 @@ button
 }
 .infoFilter 
 {    
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .economicFilterSize
 {
-    width: 13em;
+    width: 12em;
 }
 .familyFilterSize
 {
-    width: 10.5em;
+    width: 9.5em;
 }
 .romanticFilterSize
 {
-    width: 12.5em;
+    width: 11.5em;
 }
 .animalFilterSize
 {
-    width: 16em;
+    width: 15em;
 }
 .iconFilter
 { 
@@ -284,6 +291,10 @@ h2
     justify-content: space-between;
     font-size: 0.8em;
 }
+.titleCardPop>h3
+{
+    margin-bottom: 0.5em;
+}
 .bold
 {
     font-weight: 800;
@@ -340,15 +351,30 @@ h3
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2em;
     
 }
 .actCardStyle
 {
-    width: 20em;
+    width: 18em;
     border-radius: 0.8em;
     background-color: #FFF;
     box-shadow: 0.3em 0.5em 1em #F2F2F2;
     padding-bottom: 0.8em;
+}
+.actCardBC
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em; 
+}
+.actCardEF
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em; 
 }
 .infoActCard
 {
@@ -358,27 +384,27 @@ h3
 }
 .actCardA, .actCardD
 {
-    height: 29em;  
+    height: 27em;  
 }
 .actCardA img, .actCardD img
 {
-    height: 26em;
+    height: 24.5em;
 }
 .actCardB img
 {
-    height: 13em;
+    height: 11.5em;
 }
 .actCardC img
 {
-    height: 7em;
+    height: 7.5em;
 }
 .actCardE img
 {
-    height: 9em;
+    height: 8.5em;
 }
 .actCardF img
 {
-    height: 11em;
+    height: 10.5em;
 }
 .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
 {
@@ -389,28 +415,27 @@ h3
 }
 .actCardB
 {
-    height: 16em;
+    height: 14em;
 }
 .actCardC
 {
-    margin-top: 2em;
     height: 10em;
 }
 .actCardE
 {
-    height: 12em;
+    height: 11em;
 }
 .actCardF
 {
-    margin-top: 2em;
-    height: 14em;
+    height: 13em;
 }
 
 /* /////////////////// footer ///////////////// */
 .foot 
 {
     margin-top: 5em;
-    height: 10em;
+    width: 100%;
+    height: 14em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -419,16 +444,27 @@ h3
 .footerBlock
 {
     margin-right: 12em;
+    margin-top: 2em;
 }
 .footerBlockList
 {
     list-style-type: none;
     text-align: left;
-}    
+}  
+.footerBlockList>li
+{
+    margin-bottom: 1em;
+}  
 .clickable:hover, .tabItem:hover
 {
     color: #0065FC;
 }
+
+
+
+
+
+
 
 
 @media screen and (max-device-width: 375px)
