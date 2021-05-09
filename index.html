@@ -16,7 +16,7 @@
         <!--header-->
 		
 		<div id="header">
-			<p><img class="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></p>
+			<span><img class="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></span>
 			<nav>
 				<ul class="headerNavTab">
 					<li><a class="tabItem clickable" href="#lodging">Hébergements</a></li>
@@ -39,35 +39,35 @@
 					</div>
 				</form>
 			</div>
-			<div class="lodgingFilters flexRow">
+			<div id="lodgingFilters" class="stars flexRow">
 				<span class="bold infoFilter">Filtres</span>
 				<a href="#" class="clickable">
-					<div class="filter flexRow economicFilterSize">
+					<div id="economicFilter" class="filter flexRow">
 						<span class="iconFilter blue"><i class="fas fa-money-bill-wave iconSize"></i></span>
 						<span class="infoFilter bold">Economique</span>
 					</div>
 				</a>
 				<a href="#" class="clickable">
-					<div class="filter flexRow familyFilterSize">
+					<div id="familyFilter" class="filter flexRow">
 						<span class="iconFilter blue"><i class="fas fa-child iconSize"></i></span>
 						<span class="infoFilter bold">Familial</span>
 					</div>
 				</a>
 				<a href="#" class="clickable">
-					<div class="filter flexRow romanticFilterSize">
+					<div id="romanticFilter" class="filter flexRow">
 						<span class="iconFilter blue"><i class="fas fa-heart iconSize"></i></span>
 						<span class="infoFilter bold">Romantique</span>
 					</div>
 				</a>
 				<a href="#" class="clickable">
-					<div class="filter flexRow animalFilterSize">
+					<div id="animalFilter" class="filter flexRow">
 						<span class="iconFilter blue"><i class="fas fa-dog iconSize"></i></span>
 						<span class="infoFilter bold">Animaux autorisés</span>
 					</div>
 				</a>
 			</div>
 			<div id="info" class="flexRow">
-				<div class="infoCircle blue bold">i</div>
+				<div id="infoCircle" class="blue bold">i</div>
 				<span>Plus de 500 logements sont disponibles dans cette ville</span>
 			</div>
 			<div class="lodgingSection">
@@ -253,13 +253,13 @@
 					</a>
 				</article>
 				<div class="actCardBC flexCol">
-					<article class="actCardB actCardStyle">
+					<article id="actCardB" class="actCardStyle">
 						<a href="#" class="clickable">
 							<img src="img/act/imgAct2.jpg" alt="Photo du Fort de Pomègues" class="imgSetting" />
 							<h3 class="infoActCard">Fort de Pomègues</h3>
 						</a>
 					</article>
-					<article class="actCardC actCardStyle">
+					<article id="actCardC" class="actCardStyle">
 						<a href="#" class="clickable">
 							<img src="img/act/imgAct3.jpg" alt="Photo de l'Îles du Frioul" class="imgSetting" />
 							<h3 class="infoActCard">Îles du Frioul</h3>
@@ -273,13 +273,13 @@
 					</a>
 				</article>
 				<div class="actCardBC flexCol">
-					<article class="actCardE actCardStyle">
+					<article id="actCardE" class="actCardStyle">
 						<a href="#" class="clickable">
 							<img src="img/act/imgAct5.jpg" alt="Photo de Notre-Dame-de-la-Garde" class="imgSetting" />
 							<h3 class="infoActCard">Notre-Dame-de-la-Garde</h3>
 						</a>
 					</article>
-					<article class="actCardF actCardStyle">
+					<article id="actCardF" class="actCardStyle">
 						<a href="#" class="clickable">
 							<img src="img/act/imgAct6.jpg" alt="Photo du Parc Longchamp" class="imgSetting" />
 							<h3 class="infoActCard">Parc Longchamp</h3>
@@ -291,27 +291,27 @@
 
 		<!--footer-->
 		<footer class="foot">
-			<div class="footerBlock">
-			   <ul class="footerBlockList">
-				   <li><h3>A propos</h3></li>
-				   <li><a class="clickable" href="#">Fonctionnement du site</a></li>
-				   <li><a class="clickable" href="#">Conditions générales de vente</a></li>
-				   <li><a class="clickable" href="#">Données et confidentialité</a></li>
-			   </ul>
+			<div>
+				<ul class="footerBlockList">
+					<li><h3>A propos</h3></li>
+					<li><a class="clickable" href="#">Fonctionnement du site</a></li>
+					<li><a class="clickable" href="#">Conditions générales de vente</a></li>
+					<li><a class="clickable" href="#">Données et confidentialité</a></li>
+				</ul>
 		   </div>
-		   <div class="footerBlock">
-			   <ul class="footerBlockList">
-				   <li><h3>Nos hébergements</h3></li>
-				   <li><a class="clickable" href="#">Charte qualité</a></li>
-				   <li><a class="clickable" href="#">Soumettre votre hôtel</a></li>
-			   </ul>
+		   <div>
+				<ul class="footerBlockList">
+					<li><h3>Nos hébergements</h3></li>
+					<li><a class="clickable" href="#">Charte qualité</a></li>
+					<li><a class="clickable" href="#">Soumettre votre hôtel</a></li>
+				</ul>
 		   </div>
-		   <div class="footerBlock">
-			   <ul class="footerBlockList">
-				   <li><h3>Assistance</h3></li>
-				   <li><a class="clickable" href="#">Centre d'aide</a></li>
-				   <li><a class="clickable" href="#">Nous contacter</a></li>
-			   </ul>
+		   <div>
+				<ul class="footerBlockList">
+					<li><h3>Assistance</h3></li>
+					<li><a class="clickable" href="#">Centre d'aide</a></li>
+					<li><a class="clickable" href="#">Nous contacter</a></li>
+				</ul>
 		   </div>
 		</footer>
     </body>
