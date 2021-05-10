@@ -1,5 +1,4 @@
-body
-{
+body {
     font-family: 'Raleway', sans-serif, Arial;
     display: flex;
     flex-direction: column;
@@ -8,83 +7,70 @@ body
     margin-right: 0em;
     margin-bottom: 0em;
 }
-.flexCol
-{
+.flexCol {
     display: flex;
     flex-direction: column;
 }
-.flexRow
-{
+.flexRow {
     display: flex;
     flex-direction: row;
 }
-.blue 
-{
+.blue {
     color: #0065FC;
 }
-.gray
-{
+.grey {
     color: #DEEBFF;
 }
-.bold
-{
+.bold {
     font-weight: 800;
 }
-.clickable
-{
+.clickable {
     text-decoration: none;
     color: #000000;
 }
 
-/* //////////////////// header ///////////////////// */
-#header
-{
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
     padding-right: 3em;
-    margin-right: 3em;
+    margin-right: 1em;
     margin-left: 3em;
-    /*padding-top: 2em;*/
+    margin-bottom: 2em;
 }
-.headerNavTab
-{
+.headerNavTab {
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-    gap: 2em;
+    gap: 1em;
 	width: 30em;
 	height: 10vh;
 	align-items: center;
-    list-style-type: none;
     font-size: 0.9em;
 }
-.headerNavTab>li
-{
-    height: 4em;
+.logo {
+    height: 2em;
+}
+.tabItem {
+    height: 2em;
     padding-top: 3em;
     width: 10em;
     text-align-last: center;
 }
-.tabItemRegister
-{
+.tabItemRegister {
 	text-decoration: none;
 }
 
-/* /////////////////// section lodging //////////////////// */
-#lodging
-{
+#lodging {
     height: auto;
     margin-right: 3em;
     margin-left: 3em;
 }
-h1
-{
+h1 {
     margin-bottom: 0.3em;
 }
-.lodgingForm
-{
+.lodgingForm {
     border: 0.08em #F2F2F2 solid; 
     border-radius: 1em;
     background-color: #F2F2F2;
@@ -94,29 +80,25 @@ h1
     justify-content: space-between;
     align-items: center;
 }
-label
-{
+label {
     margin-left: 1.2em;
     width: 2.2em;
 }
-input[type=text]
-{
+input[type=text] {
     font-size: 0.8em;
     padding-left: 1em;
     height: 97%;
     border: none;
 
 }
-::placeholder
-{
+::placeholder {
     color: #000;
     opacity: 1;
     font-weight: 800;
     font-size: 1.2em;
     font-family: 'Raleway', sans-serif, Arial;
 }
-button
-{
+button {
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
     background-color: #0065FC;
@@ -128,19 +110,16 @@ button
     font-size: 0.9em;
     font-weight: 700;
 }
-.buttonSize
-{
+.buttonSize {
     font-size: 1.1em;
 }
-#lodgingFilters
-{
+#lodgingFilters {
     height: 7em;
     justify-content: flex-start;
     align-items: center;
     gap: 2em;
 }
-.filter  
-{
+.filter {
     justify-content: start;
     align-items: center;
     gap: 1em;
@@ -151,28 +130,22 @@ button
     border-radius: 3em;
     border-left: 0.2 #DEEBFF solid;
 }
-.infoFilter 
-{    
+.infoFilter {    
     font-size: 1em;
 }
-#economicFilter
-{
+#economicFilter {
     width: 12em;
 }
-#familyFilter
-{
+#familyFilter {
     width: 9.5em;
 }
-#romanticFilter
-{
+#romanticFilter {
     width: 11.5em;
 }
-#animalFilter
-{
+#animalFilter {
     width: 15em;
 }
-.iconFilter
-{ 
+.iconFilter { 
     border-radius: 3em;
     background-color: #DEEBFF;
     height: 3.4em;
@@ -181,16 +154,13 @@ button
     justify-content: center;
     align-items: center;
 }
-.iconSize
-{
+.iconSize {
     font-size: 1.4em;
 }
-#info
-{
+#info {
     align-items: center;
 }
-#infoCircle
-{
+#infoCircle {
     border: 0.2em #DEEBFF solid;
     background-color: #FFF;
     border-radius: 50%;
@@ -200,20 +170,17 @@ button
     font-family: Georgia;
     margin-right: 0.5em;
 }
-h2
-{
+h2 {
     font-size: 1.35em;
 }
-.lodgingSection
-{
+.lodgingSection {
 	display: flex;
     flex-direction: row;
     justify-content: space-between; 
     gap: 2em;
     margin-top: 2em;
 }
-.lodging
-{
+.lodging {
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 36em;
@@ -223,14 +190,12 @@ h2
     padding-top: 2em;
     margin-top: 1em;
 }
-.lodgingPopHeader
-{
+.lodgingPopHeader {
     justify-content: space-between;
     align-items: center;
     padding-right: 2em;
 }
-.lodgingPop
-{
+.lodgingPop {
     background-color: #F2F2F2;
     border-radius: 1.2em;
     height: 36em;
@@ -240,18 +205,15 @@ h2
     padding-top: 2em;
     margin-top: 1em;
 }
-.lodgingPopCard
-{
+.lodgingPopCard {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2em;
 }
-.stars
-{
+.stars {
     font-size: 0.9em;
 }
-#lodgingTown
-{
+#lodgingTown {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -259,55 +221,47 @@ h2
     gap: 1.5em;
     margin-bottom: 3em;
 }
-.infoCard
-{
+.infoCard {
     margin-left: 1em;
     margin-top: 0.3em;
     gap: 0.3em;
     font-size: 0.8em;
 }
-.infoCardPop
-{
+.infoCardPop {
     margin-left: 1em;
     margin-top: 0.6em;
     margin-bottom: 00.6em;
     justify-content: space-between;
     font-size: 0.8em;
 }
-.titleCardPop>h3
-{
+.titleCardPop>h3 {
     margin-bottom: 0.5em;
 }
-.card 
-{
+.card {
     width: 14em;
     height: 11em;
     border-radius: 1.2em;
     padding: 0.3em;
     background-color: #FFF;
 }
-.card img 
-{
+.card img {
     border-top-left-radius: 0.9em;
     border-top-right-radius: 0.9em;
     object-fit: cover;
     width: 14em;
     height: 7em;
 }
-h3
-{
+h3 {
     margin: 0em;
 }
-.popCard
-{
+.popCard {
     width: 20em;
     height: 8em;
     border-radius: 1.2em;
     padding: 0.3em;
     background-color: #FFF;
 }
-.popCard img
-{
+.popCard img {
     border-bottom-left-radius: 0.9em;
     border-top-left-radius: 0.9em;
     object-fit: cover;
@@ -315,92 +269,73 @@ h3
     height: 8em;
 }
 
-/* /////////////////// section activity ///////////////// */
-#activity
-{
+#activity {
     height: 32em;
     margin-top: 4em;
     margin-left: 3em;
     margin-right: 3em;
 }
-.activityCards
-{
+.activityCards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 2em;
     
 }
-.actCardStyle
-{
+.actCardStyle {
     width: 18em;
     border-radius: 1.2em;
     background-color: #FFF;
     box-shadow: 0.3em 0.5em 1em #F2F2F2;
     padding-bottom: 0.8em;
 }
-.actCardBC
-{
+.actCardBC {
     justify-content: space-between;
     gap: 2em; 
 }
-.infoActCard
-{
+.infoActCard {
     margin-left: 1em;
     margin-top: 0.8em;
     font-size: 1em;
 }
-.actCardA
-{
+.actCardA {
     height: 27em;  
 }
-.actCardA img
-{
+.actCardA img {
     height: 24.5em;
 }
-#actCardB img
-{
+#actCardB img {
     height: 11.5em;
 }
-#actCardC img
-{
+#actCardC img {
     height: 7.5em;
 }
-#actCardE img
-{
+#actCardE img {
     height: 8.5em;
 }
-#actCardF img
-{
+#actCardF img {
     height: 10.5em;
 }
-.imgSetting
-{
+.imgSetting {
     border-top-left-radius: 0.9em;
     border-top-right-radius: 0.9em;
     object-fit: cover;
     width: 100%;
 }
-#actCardB
-{
+#actCardB {
     height: 14em;
 }
-#actCardC
-{
+#actCardC {
     height: 10em;
 }
-#actCardE
-{
+#actCardE {
     height: 11em;
 }
-#actCardF
-{
+#actCardF {
     height: 13em;
 }
 
-/* /////////////////// footer ///////////////// */
-.foot 
-{
+.foot {
     margin-top: 5em;
     width: 100%;
     height: 12em;
@@ -411,27 +346,36 @@ h3
     background-color: #F2F2F2;
     padding-top: 2em;
 }
-.footerBlockList
-{
+.footerBlockList {
     list-style-type: none;
     text-align: left;
     height: 6em;
 } 
-li>h3
-{
+li>h3 {
     margin-bottom: 1.2em;
 }
-.footerBlockList>li
-{
+.footerBlockList>li {
     margin-bottom: 0.8em;
 }  
-.headerNavTab>li:hover
-{   
+.headerNavTab>a:hover {   
     border-top: 0.2em #0065FC solid;
     border-bottom: 0.2em #FFF solid;
     border-left: 0.2em #FFF solid;
     border-right: 00.2em #FFF solid;
-} 
+    color: #0065FC;
+}
+#lodgingTown:hover .card, .lodgingPopCard:hover .popCard, .activityCards:hover .actCardStyle {
+    filter: grayscale(20%);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+}
+#lodgingTown:hover .card:hover, .lodgingPopCard:hover .popCard:hover, .activityCards:hover .actCardStyle:hover {
+    transform:scale(1);
+    filter: grayscale(0);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
 
 
 
