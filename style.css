@@ -376,6 +376,30 @@ li>h3 {
     opacity:1;
     box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
+.footLink:hover {
+    filter: drop-shadow(00.2em 0.2em 0.1em #0065fc);  
+}    
+.resLogo {
+    animation: 3s slideIn backwards;
+    animation-delay: 1s;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;  
+        margin-left: 0%;
+        width: 1%;
+    }
+    75% {
+        opacity: 0.5;  
+        margin-left: 100%;
+        width: 250%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 
 
 
