@@ -18,8 +18,10 @@
 		<div id="header">
 			<span class="logo"><img class="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></span>
 			<div class="headerNavTab">
-				<a class="tabItem clickable" href="#lodging">Hébergements</a>
-				<a class="tabItem clickable" href="#activity">Activités</a>
+				<div id="navItem">
+					<a class="tabItem clickable" href="#lodging">Hébergements</a>
+					<a class="tabItem clickable" href="#activity">Activités</a>
+				</div>
 				<a class="tabItemRegister tabItem blue bold" href="#">S'inscrire</a>
 			</div>
 		</div>	
@@ -31,14 +33,15 @@
 			<div>
 				<form>
 				    <div class="lodgingForm flexRow">
-						<label for="townChoice"><i class="fas fa-map-marker-alt"></i></label>
+						<label for="townChoice"><i class="fas fa-map-marker-alt iconSize"></i></label>
 				        <input type="text" name="townChoice" id="townChoice" placeholder="Marseille,France" size="30" maxlength="20" />
-				        <button><span class="buttonSize">Rechercher</span></button>
+				        <button id="search"><span class="buttonSize">Rechercher</span></button>
+						<button id="searchIcon"><i class="fas fa-search iconSize"></i></span></button>
 					</div>
 				</form>
 			</div>
 			<div id="lodgingFilters" class="stars flexRow">
-				<span class="bold infoFilter">Filtres</span>
+				<span id="titleFilter" class="bold">Filtres</span>
 				<a href="#" class="clickable">
 					<div id="economicFilter" class="filter flexRow">
 						<span class="iconFilter blue"><i class="fas fa-money-bill-wave iconSize"></i></span>

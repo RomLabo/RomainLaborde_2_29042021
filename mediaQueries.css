@@ -6,29 +6,121 @@
         margin: 0px;
         padding: 0px;
     }
-    #header
-    {
-        justify-content: flex-start;
+    #header {
+        flex-wrap: wrap;
     }
-    .headerNavTab
-    {
+    .headerNavTab {
         height: auto;
         flex-wrap: wrap-reverse;
+        gap: 1em;
+        width: 58em;
+    }
+    .navItem {
+        display: flex;
+        justify-content: space-between;
+        width: 53em;
+    }
+    .logo {
+        height: 2em;
+        width: 18em;
+    }
+    .resLogo {
+        height: 7em;
+        margin-top: 5em;
+    }
+    .tabItem {
+        padding-top: 2em;
+        width: 30em;
+        font-size: 3em;
+    }
+    .tabItemRegister {
+        padding-top: 2em;
+        width: 30em;
+        font-size: 3em;
+        text-align-last: end;
+    }
+    .lodgingForm {
+        border: 0.2em #F2F2F2 solid; 
+        border-radius: 2.5em;
+        background-color: #FFF;
+        width: 54em;
+        height: 8em;
+        margin-left: 3em;
+        margin-bottom: 4em;
+    }
+    label {
+        background-color: #F2F2F2;
+        width: 8.4em;
+        height: 8.4em;
+        border-top-left-radius: 2.5em;
+        border-bottom-left-radius: 2.5em;
+        margin-left: 0em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text] {
+        font-size: 0.8em;
+        padding-left: 1em;
+        height: 97%;
+        width: 42em;
+        border: none;
+    
+    }
+    ::placeholder {
+        font-size: 3.5em;
+    }
+    #search {
+        display: none;
+    }
+    #searchIcon {
+        display: flex;
+        width: 9.2em;
+        height: 9.2em;
+        border-radius: 2.5em;
+        align-items: center;
+        justify-content: center;
     }
     #lodgingFilters {
         flex-wrap: wrap;
+        height: 40em;
+        margin-left: 3em;
+        margin-bottom: 5em;
+    }
+    #titleFilter {
+        width: 20em;
+        font-size: 3em;
     }
     .filter {
-        height: 7em;
-        border-radius: 4em;
+        height: 8em;
+        border-radius: 5em;
+        border-bottom: 0.5em #d9d9d9 solid;
+        border-top: 0.5em #d9d9d9 solid;
+        border-right: 0.5em #d9d9d9 solid;
+        gap: 2em;
     }
     .iconFilter {
-        border-radius: 4em;
-        width: 7.4em;
-        height: 7.4em;
+        border-radius: 5em;
+        width: 8.8em;
+        height: 8.8em;
     }
     #economicFilter {
-        width: 34em;
+        width: 32em;
+    }
+    #familyFilter {
+        width: 25em;
+    }
+    #romanticFilter {
+        width: 31em;
+    }
+    #animalFilter {
+        width: 40em;
+    }
+    .infoFilter {
+        font-size: 3em;
+    }
+    .iconSize {
+        font-size: 3.5em;
     }
     #infoCircle {
         border: 0.1em #DEEBFF solid;
@@ -93,9 +185,6 @@
     }
     .lodgingPopHeader {
         padding-right: 3em;
-    }
-    .lodgingPopHeader i{
-        font-size: 3.5em;
     }
     .lodgingPopCard {
         display: flex;
@@ -163,7 +252,7 @@
     .foot
     {  
         flex-direction: column;
-        height: 100%;
+        height: 70%;
         gap: 2em;
     }
     .footerBlockList
