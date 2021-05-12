@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: fit-content;
     margin-left: 0em;
     margin-right: 0em;
     margin-bottom: 0em;
@@ -157,8 +158,9 @@ button {
 .iconSize {
     font-size: 1.4em;
 }
-#info {
+#infoLogo {
     align-items: center;
+    justify-content: start;
 }
 #infoCircle {
     border: 0.2em #DEEBFF solid;
@@ -411,120 +413,6 @@ li>h3 {
     }
 }
 
-
-
-
-
-
-@media screen and (max-device-width: 375px)
-{
-    body 
-    {
-        width: auto;
-        margin: 0px;
-        padding: 0px;
-    }
-    #header
-    {
-        justify-content: flex-start;
-    }
-    .headerNavTab
-    {
-        height: auto;
-        flex-wrap: wrap-reverse;
-    }
-    #lodging
-    {
-        margin-left: 0em;
-        margin-right: 0em;
-    }
-    .lodgingSection
-    {
-        flex-direction: column-reverse;
-    }
-    .lodging
-    {
-        width: auto;
-        height: auto;
-        background-color: #FFF;
-    }
-    .card
-    {
-        border-radius: 3em;
-        box-shadow: 0.3em 0.5em 1em #F2F2F2;
-
-    }
-    .card img 
-    {
-        border-top-left-radius: 3em;
-        border-top-right-radius: 3em;
-    }
-    #lodgingTown
-    {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .lodgingPop
-    {
-        width: auto;
-        border-radius: 0em;
-    }
-    .boxCard
-    {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    #activity
-    {
-        height: auto;
-        width: auto;
-        margin-left: 1.5em;
-    }
-    .activityCards
-    {
-        flex-direction: column;
-    }
-    .actCardStyle
-    {
-        width: 95%;
-        height: 27em;
-        margin-top: 2em;
-        border-radius: 2.5em;
-    }
-    .actCardB img, .actCardC img, .actCardE img, .actCardF img, .actCardA img, .actCardD img
-    {
-        height: 22em;
-        border-top-left-radius: 2.5em;
-        border-top-right-radius: 2.5em;
-    }
-    h3 
-    {
-        font-size: 1em;
-    }
-    .foot
-    {  
-        flex-direction: column;
-        height: 100%;
-    }
-    .footerBlockList
-    {
-        font-size: 3em;
-    }
-}
-
-    
-@media screen and (max-device-width: 700px)
-{
-    #lodgingTown
-    {
-        flex-wrap: wrap;
-    }
-    .lodging
-    {
-        width: auto;
-        height: auto;
-    }
-}
 
 
 
