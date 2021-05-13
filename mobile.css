@@ -369,15 +369,4 @@
 }
   
      
-@media screen and (max-device-width: 700px)
-{
-    #lodgingTown
-    {
-        flex-wrap: wrap;
-    }
-    .lodging
-    {
-        width: auto;
-        height: auto;
-    }
-}
+
