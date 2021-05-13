@@ -8,21 +8,19 @@
     }
     #header {
         flex-wrap: wrap;
+        padding-right: 0em;
+        margin-left: 0em;
     }
     .headerNavTab {
-        height: auto;
-        flex-wrap: wrap-reverse;
-        gap: 1em;
-        width: 58em;
-    }
-    .navItem {
-        display: flex;
         justify-content: space-between;
-        width: 53em;
+        flex-wrap: wrap;
+        height: auto;
+        width: 68em;
     }
     .logo {
         height: 2em;
         width: 18em;
+        padding-left: 3em;
     }
     .resLogo {
         height: 7em;
@@ -30,14 +28,29 @@
     }
     .tabItem {
         padding-top: 2em;
-        width: 30em;
         font-size: 3em;
+        width: 11.33em;
+        border-bottom: 0.2em #DEEBFF solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        order: 2;
     }
     .tabItemRegister {
+        order: 1;
         padding-top: 2em;
-        width: 30em;
+        width: 22em;
         font-size: 3em;
+        padding-right: 1em;
         text-align-last: end;
+    }
+    h1 {
+        font-size: 3em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    #subtitle {
+        margin-left: 3em;
     }
     .lodgingForm {
         border: 0.2em #F2F2F2 solid; 
@@ -47,6 +60,7 @@
         height: 8em;
         margin-left: 3em;
         margin-bottom: 4em;
+        margin-top: 6em;
     }
     label {
         background-color: #F2F2F2;
@@ -59,16 +73,22 @@
         justify-content: center;
         align-items: center;
     }
+    #position{
+        animation: 1s jump backwards;
+        animation-delay: 4s;
+        animation-iteration-count: 10;
+    }
     input[type=text] {
-        font-size: 0.8em;
-        padding-left: 1em;
+        font-size: 2.5em;
+        font-weight: 800;
+        padding-left: 0em;
         height: 97%;
-        width: 42em;
+        width: 14em;
         border: none;
     
     }
     ::placeholder {
-        font-size: 3.5em;
+        font-size: 1.2em;
     }
     #search {
         display: none;
@@ -260,9 +280,95 @@
         font-size: 3em;
         margin-left: 0.5em;
     }
-}
-
+    .headerNavTab a:hover {   
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        color: #000;
+    }
+    .filter:hover .iconFilter{
+        color: #DEEBFF;
+        background-color: #0065FC;
+        transform-origin: none;
+        transform: none;
+    }
+    #lodgingTown:hover .card, .lodgingPopCard:hover .popCard, .activityCards:hover .actCardStyle {
+        filter: none;
+        opacity: 1;
+        transform: none;
+        box-shadow:none;
+    }
+    #lodgingTown:hover .card:hover, .lodgingPopCard:hover .popCard:hover, .activityCards:hover .actCardStyle:hover {
+        transform: none;
+        filter: none;
+        box-shadow: none;
+    }
+    .footLink:hover, .more:hover {
+        filter: none;
+    }  
     
+    .filter:active .iconFilter{
+        color: #DEEBFF;
+        background-color: #0065FC;
+        transform-origin: center;
+        transform: rotate(15deg);
+    }
+    #lodgingTown:active .card, .lodgingPopCard:active .popCard, .activityCards:active .actCardStyle {
+        filter: grayscale(20%);
+        opacity:.5;
+        transform: scale(.98);
+        box-shadow:none;
+    }
+    #lodgingTown:active .card:active, .lodgingPopCard:active .popCard:active, .activityCards:active .actCardStyle:active {
+        transform:scale(1);
+        filter: grayscale(0);
+        opacity:1;
+        box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    }
+    .footLink:active, .more:active {
+        filter: drop-shadow(0 0.2em 0.1em #000);
+    }
+    .tabItem:active {
+        border-bottom: 0.2em #0065FC solid;
+        color: #0065FC;
+    }
+    @keyframes width {
+        from {
+            opacity: 0;  
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes jump {
+        from {
+            margin-bottom: 0%;
+        }
+        to {
+            margin-bottom: 30%;
+        }
+    }    
+    @keyframes slideIn {
+        from {
+            opacity: 0;  
+            margin-left: 0%;
+            width: 1%;
+        }
+        75% {
+            opacity: 0.5;  
+            margin-left: 50%;
+            width: 140%;
+        }
+        to {
+            opacity: 1;
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+}
+  
+     
 @media screen and (max-device-width: 700px)
 {
     #lodgingTown

@@ -35,16 +35,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
 	align-items: flex-end;
-    padding-right: 3em;
+    padding-right: 1em;
     margin-left: 3em;
     margin-bottom: 2em;
 }
 .headerNavTab {
+    animation: 2s width backwards;
+    animation-delay: 4s;
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-    gap: 1em;
-	width: 26em;
+	width: 30em;
 	height: 10vh;
 	align-items: center;
     font-size: 0.9em;
@@ -56,21 +57,12 @@ body {
     animation: 3s slideIn backwards;
     animation-delay: 1s;
 }
-#navItem {
-    text-decoration: none;
-    height: 2.3em;
-    padding-top: 3em;
-    width: 20em;
-    text-align-last: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 .tabItem {
     height: 2em;
     padding-top: 3em;
     width: 10em;
     text-align-last: center;
+    border: 0.2em #FFF solid;
 }
 .tabItemRegister {
 	text-decoration: none;
@@ -78,6 +70,7 @@ body {
     padding-top: 3em;
     width: 10em;
     text-align-last: center;
+    border: 0.2em #FFF solid;
 }
 
 #lodging {
@@ -101,6 +94,11 @@ h1 {
 label {
     margin-left: 1.2em;
     width: 2.2em;
+}
+#position{
+    animation: 1s jump backwards;
+    animation-delay: 7s;
+    animation-iteration-count: 10;
 }
 input[type=text] {
     font-size: 0.8em;
@@ -381,8 +379,6 @@ h3 {
 }
 .footerBlockList {
     list-style-type: none;
-    /*text-align: left;
-    height: 6em;*/
 } 
 li>h3 {
     margin-bottom: 1.2em;
@@ -398,8 +394,10 @@ li>h3 {
     color: #0065FC;
 }
 .filter:hover .iconFilter{
+    color: #DEEBFF;
+    background-color: #0065FC;
     transform-origin: center;
-    transform: rotate(25deg);
+    transform: rotate(15deg);
 }
 #lodgingTown:hover .card, .lodgingPopCard:hover .popCard, .activityCards:hover .actCardStyle {
     filter: grayscale(20%);
@@ -413,16 +411,29 @@ li>h3 {
     opacity:1;
     box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
-.footLink:hover {
-    border-radius: 10% 65%;
-    border-left: 0.2em rgba(0, 101, 252, 0.5) solid;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    background: linear-gradient(to left, #F2F2F2 70%, rgba(0, 101, 252, 0.5));
-    /*box-shadow: -0.01em 0.05em 0.3em rgba(0, 101, 252, 0.5);*/
+.footLink:hover, .more:hover {
+    filter: drop-shadow(0 0.2em 0.1em #000);
 }    
-
+@keyframes width {
+    from {
+        opacity: 0;
+        margin-right: 0%;  
+        width: 1%;
+    }
+    to {
+        opacity: 1;
+        margin-right: 20%;
+        width: 1.2%;
+    }
+}
+@keyframes jump {
+    from {
+        margin-bottom: 0%;
+    }
+    to {
+        margin-bottom: 30%;
+    }
+}  
 @keyframes slideIn {
     from {
         opacity: 0;  
@@ -431,8 +442,8 @@ li>h3 {
     }
     75% {
         opacity: 0.5;  
-        margin-left: 100%;
-        width: 250%;
+        margin-left: 70%;
+        width: 200%;
     }
     to {
         opacity: 1;

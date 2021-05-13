@@ -18,22 +18,20 @@
 		<div id="header">
 			<span class="logo"><img class="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></span>
 			<div class="headerNavTab">
-				<div id="navItem">
-					<a class="tabItem clickable" href="#lodging">Hébergements</a>
-					<a class="tabItem clickable" href="#activity">Activités</a>
-				</div>
-				<a class="tabItemRegister tabItem blue bold" href="#">S'inscrire</a>
+				<a class="tabItem clickable" href="#lodging">Hébergements</a>
+				<a class="tabItem clickable" href="#activity">Activités</a>
+				<a class="tabItemRegister blue bold" href="#">S'inscrire</a>
 			</div>
 		</div>	
 
        <!--section lodging-->
 		<section id="lodging">
 			<h1>Trouver votre hébergement pour des vacances de rêve</h1>
-			<span>En plein centre ville ou en pleine nature</span>
+			<span id="subtitle">En plein centre ville ou en pleine nature</span>
 			<div>
 				<form>
 				    <div class="lodgingForm flexRow">
-						<label for="townChoice"><i class="fas fa-map-marker-alt iconSize"></i></label>
+						<label for="townChoice"><i id="position" class="fas fa-map-marker-alt iconSize"></i></label>
 				        <input type="text" name="townChoice" id="townChoice" placeholder="Marseille,France" size="30" maxlength="20" />
 				        <button id="search"><span class="buttonSize">Rechercher</span></button>
 						<button id="searchIcon"><i class="fas fa-search iconSize"></i></span></button>
