@@ -4,149 +4,94 @@
     {
         flex-wrap: wrap;
     }
-    .lodging
-    {
+    .lodgingSection {
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .lodging {
         width: auto;
         height: auto;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 2em;
     }
-    .headerNavTab {
-        animation: 2s width backwards;
-        animation-delay: 4s;
-        font-size: 1.3em;
+    .card {
+        width: 21em;
+        height: 15em;
     }
-    .logo {
-        height: 5em;
-        width: 18em;
+    .card img {
+        width: 21em;
+        height: 9em;
     }
-    .resLogo {
-        animation: 3s slideIn backwards;
-        animation-delay: 1s;
-        width: 18em;
-    }
-    #subtitle {
-        font-size: 1.4em;
-    }
-    .tabItem {
-        height: 2em;
-        padding-top: 3em;
-        width: 10em;
-        text-align-last: center;
-        border: 0.2em #FFF solid;
-    }
-    .tabItemRegister {
-        text-decoration: none;
-        height: 2em;
-        padding-top: 3em;
-        width: 10em;
-        text-align-last: center;
-        border: 0.2em #FFF solid;
-    }
-    
-    #lodging {
-        height: auto;
-        margin-right: 3em;
-        margin-left: 3em;
-    }
-    h1 {
-        margin-bottom: 0.3em;
-    }
-    .lodgingForm {
-        border: 0.1em #F2F2F2 solid; 
-        margin-top: 2.5em;
-        width: 40em;
-        height: 5em;
-        margin-bottom: 2em;
-    }
-    label {
-        margin-left: 2em;
-        width: 5em;
-    }
-    #position{
-        animation: 1s jump backwards;
-        animation-delay: 7s;
-        animation-iteration-count: 10;
-    }
-    input[type=text] {
-        font-size: 1.3em;
-    
-    }
-    ::placeholder {
-        color: #000;
-        opacity: 1;
-        font-weight: 800;
+    .infoCard {
         font-size: 1.2em;
-        font-family: 'Raleway', sans-serif, Arial;
     }
-    #search {
-        width: 15em;
-        height: 5.5em;
-    }
-    #searchIcon {
-        display: none;
-        border-top-right-radius: 1em;
-        border-bottom-right-radius: 1em;
-        background-color: #0065FC;
-        border: none;
-        color: #FFF;
-        width: 10em;
-        height: 3.5em;
-        font-size: 0.9em;
-    }
-    .buttonSize {
-        font-size: 1.1em;
-    }
-    #lodgingFilters {
-        gap: 4em;
-    }
-    .filter {
-        height: 3em;
-        border-bottom: 0.3em #d9d9d9 solid;
-        border-top: 0.3em #d9d9d9 solid;
-        border-right: 0.3em #d9d9d9 solid; 
-        border-left: 0.3em #DEEBFF solid;
-    }
-    #titleFilter {
+    .more {
         font-size: 1.5em;
     }
-    .infoFilter {    
-        font-size: 1em;
-    }
-    #economicFilter {
-        width: 15em;
-    }
-    #familyFilter {
-        width: 9.5em;
-    }
-    #romanticFilter {
-        width: 11.5em;
-    }
-    #animalFilter {
-        width: 15em;
-    }
-    .iconFilter { 
-        border-radius: 3em;
-        background-color: #DEEBFF;
-        height: 3.4em;
-        width: 3.4em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .lodgingPop {
+        width: auto;
+        height: auto;
+        padding-right: 3em;
+        padding-left: 3em;
+        padding-bottom: 3em;
+
     }
     .iconSize {
-        font-size: 2.2em;
+        font-size: 2em;
     }
-    #infoLogo {
-        align-items: center;
-        justify-content: start;
+    .lodgingPopCard {
+        display: flex;
+        flex-direction: row;
+        gap: 3.5em;
     }
-    #infoCircle {
-        border: 0.2em #DEEBFF solid;
-        background-color: #FFF;
-        border-radius: 50%;
-        width: 1.2em;
-        height: 1.2em;
-        text-align: center;
-        font-family: Georgia;
-        margin-right: 0.5em;
+    h3 {
+        margin: 0em;
     }
+    .popCard {
+        width: 21em;
+        height: 15em;
+        flex-wrap: wrap;
+    }
+    .popCard img {
+        border-bottom-left-radius: 0em;
+        border-top-right-radius: 0.9em;
+        width: 21em;
+        height: 9em;
+    }
+    #activity {
+        height: auto;
+    }
+    .activityCards {
+        flex-wrap: wrap;
+    }
+    .actCardStyle {
+        width: 37em;
+        border-radius: 2em;
+    }
+    #actCardB, #actCardC, #actCardE, #actCardF {
+        height: 15em;
+    }
+    #actCardB img, #actCardC img, #actCardE img, #actCardF img {
+        height: 11em;
+    }
+    .actCardA {
+        height: 34em;
+    }
+    .actCardA img {
+        height: 30em;
+    }
+    .imgSetting {
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+    }
+
+
+
+
+
+
+
 }   
