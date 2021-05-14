@@ -1,4 +1,4 @@
-@media screen and (max-device-width: 700px)
+@media screen and (min-device-width: 600px) and (max-device-width: 900px)
 {
     #lodgingTown
     {
@@ -16,12 +16,12 @@
     }
     .logo {
         height: 5em;
-        width: 14em;
+        width: 18em;
     }
     .resLogo {
         animation: 3s slideIn backwards;
         animation-delay: 1s;
-        width: 12em;
+        width: 18em;
     }
     #subtitle {
         font-size: 1.4em;
