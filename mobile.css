@@ -1,35 +1,31 @@
 @media screen and (max-width: 599px)
 {
-    body 
-    {
-        width: auto;
-        margin: 0px;
-        padding: 0px;
-    }
     #header {
+        width: 100%;
         flex-wrap: wrap;
-        padding-right: 0em;
-        margin-left: 0em;
+        align-items: center;
+        padding-right: 0;
+        margin-left: 0;
     }
     .headerNavTab {
         justify-content: space-between;
         flex-wrap: wrap;
-        height: auto;
-        width: 68em;
+        height: 33%;
+        width: 100%;
     }
     .logo {
-        height: 2em;
-        width: 18em;
-        padding-left: 3em;
+        height: 1em;
+        width: 20%;
+        padding-left: 8%;
     }
     .resLogo {
-        height: 7em;
-        margin-top: 5em;
+        margin-top: 40%;
+        width: 124%;
     }
     .tabItem {
         padding-top: 2em;
-        font-size: 3em;
-        width: 11.33em;
+        font-size: 1.5em;
+        width: 50%;
         border-bottom: 0.2em #DEEBFF solid;
         border-top: none;
         border-left: none;
@@ -39,13 +35,13 @@
     .tabItemRegister {
         order: 1;
         padding-top: 2em;
-        width: 22em;
-        font-size: 3em;
+        width: 94%;
+        font-size: 1.5em;
         padding-right: 1em;
         text-align-last: end;
     }
     h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin-left: 1em;
         margin-bottom: 1em;
     }
@@ -53,22 +49,22 @@
         margin-left: 3em;
     }
     .lodgingForm {
-        border: 0.2em #F2F2F2 solid; 
-        border-radius: 2.5em;
+        border: 0.1em #F2F2F2 solid; 
+        border-radius: 1.5em;
         background-color: #FFF;
-        width: 54em;
-        height: 8em;
-        margin-left: 3em;
-        margin-bottom: 4em;
-        margin-top: 6em;
+        width: 94%;
+        height: 10%;
+        margin-left: 8%;
+        margin-bottom: 8%;
+        margin-top: 10%;
     }
     label {
         background-color: #F2F2F2;
-        width: 8.4em;
-        height: 8.4em;
-        border-top-left-radius: 2.5em;
-        border-bottom-left-radius: 2.5em;
-        margin-left: 0em;
+        width: 20%;
+        height: 4.6em;
+        border-top-left-radius: 25%;
+        border-bottom-left-radius: 25%;
+        margin-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,11 +75,12 @@
         animation-iteration-count: 10;
     }
     input[type=text] {
-        font-size: 2.5em;
+        font-size: 1.2em;
         font-weight: 800;
-        padding-left: 0em;
+        padding-left: 0;
         height: 97%;
-        width: 14em;
+        width: 65%;
+        padding-left: 5%;
         border: none;
     
     }
@@ -95,20 +92,20 @@
     }
     #searchIcon {
         display: flex;
-        width: 9.2em;
-        height: 9.2em;
-        border-radius: 2.5em;
+        width: 20%;
+        height: 5em;
+        border-radius: 25%;
         align-items: center;
         justify-content: center;
     }
     #lodgingFilters {
         flex-wrap: wrap;
-        height: 40em;
+        height: 50%;
         margin-left: 3em;
         margin-bottom: 5em;
     }
     #titleFilter {
-        width: 20em;
+        width: 10%;
         font-size: 3em;
     }
     .filter {
@@ -125,42 +122,44 @@
         height: 8.8em;
     }
     #economicFilter {
-        width: 32em;
+        width: 10%;
     }
     #familyFilter {
-        width: 25em;
+        width: 10%;
     }
     #romanticFilter {
-        width: 31em;
+        width: 10%;
     }
     #animalFilter {
-        width: 40em;
+        width: 10%;
     }
     .infoFilter {
         font-size: 3em;
     }
     .iconSize {
-        font-size: 3.5em;
+        font-size: 1.8em;
     }
     #infoCircle {
         border: 0.1em #DEEBFF solid;
-        font-size: 2.4em;
+        font-size: 1.4em;
+        width: 6%;
     }
     #infoLogo {
         justify-content: center;
         align-items: baseline;
     }
     #info {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     #infoText {
-        font-size: 2.4em;
-        width: 20em;
+        font-size: 1.2em;
+        width: 75%;
     }
     #lodging
     {
-        margin-left: 0em;
-        margin-right: 0em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
     .lodgingSection
     {
@@ -168,28 +167,28 @@
     }
     .lodging
     {
-        width: auto;
+        width: 100%;
         height: auto;
         background-color: #FFF;
-        padding-left: 3.5em;
+        padding-left: 8%;
     }
     .card
     {
-        border-radius: 3em;
-        box-shadow: 0.5em 0.5em 1.5em #F2F2F2, -0.5em -0.5em 1.5em #F2F2F2;
+        border-radius: 2em;
+        box-shadow: 0.5em 0.5em 1.5em #F2F2F2, -0.2em -0.2em 0.5em #F2F2F2;
         padding: 1.2%;
-        height: 30em;
+        height: 16em;
         width: 94%;
     }
     .card img 
     {
-        border-top-left-radius: 3em;
-        border-top-right-radius: 3em;
-        height: 18em;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        height: 60%;
         width: 100%;
     }
     .infoCard {
-        font-size: 2.4em;
+        font-size: 1.2em;
     }
     #lodgingTown
     {
@@ -198,10 +197,11 @@
     }
     .lodgingPop
     {
-        width: auto;
-        height: 84em;
-        border-radius: 0em;
-        padding-left: 3.5em;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding-left: 8%;
+        padding-bottom: 12%;
     }
     .lodgingPopHeader {
         padding-right: 3em;
@@ -213,22 +213,22 @@
     }
     .popCard {
         width: 92%;
-        height: 20em;
-        border-radius: 3em;
+        height: 12em;
+        border-radius: 2em;
         padding: 1.2%;
         box-shadow: 0.5em 0.5em 2em #d9d9d9, -0.5em -0.5em 2em #d9d9d9;
     }
     .popCard img {
-        border-bottom-left-radius: 3em;
-        border-top-left-radius: 3em;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
         width: 40%;
         height: 100%;
     }
     .infoCardPop {
-        font-size: 2.4em;
+        font-size: 1.2em;
     }
     .more {
-        font-size: 2.5em;
+        font-size: 1.4em;
     }
     #activity
     {
@@ -238,7 +238,7 @@
         margin-left: 3.5em;
     }
     h2 {
-        font-size: 3.5em;
+        font-size: 1.8em;
     }
     .activityCards
     {
@@ -272,13 +272,14 @@
     .foot
     {  
         flex-direction: column;
-        height: 70%;
+        height: auto;
         gap: 2em;
+        padding-top: 8%;
     }
     .footerBlockList
     {
-        font-size: 3em;
-        margin-left: 0.5em;
+        font-size: 1.5em;
+        margin-left: 5%;
     }
     .headerNavTab a:hover {   
         border-top: none;
