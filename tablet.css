@@ -1,13 +1,24 @@
 @media screen and (min-width: 600px) and (max-width: 980px)
 {
     #header {
-        width: 95%;
-        margin-bottom: 1rem;
+        width: 100%;
+        height: 5rem;
         margin-left: 0;
-        padding-left: 5%;
+        border-bottom: 0.2rem #f2f2f2 solid;
     }
-    .headerNavTab {
+    #headerNavTab {
         width: 65%;
+        height: 5rem;
+        align-items: baseline;
+    }
+    #logo {
+        height: 4rem;
+        margin-left: 5%;
+    }
+    .tabItem, .tabItemRegister {
+        padding-top: 2rem;
+        height: 2.8rem;
+        border: unset;
     }
     #lodging {
         width: 100%;
@@ -15,11 +26,12 @@
     }
     h1 {
         margin-left: 5%;
+        margin-right: 5%;
     }
     #subtitle {
         margin-left: 5%;
     }
-    .lodgingForm {
+    #lodgingForm {
         width: 60%;
         margin-left: 5rem;
     }
@@ -60,10 +72,13 @@
     #lodgingTown
     {
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 3rem;
+        justify-content: space-around;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .card {
-        width: 46%;
+        width: 42%;
         height: 14em;
     }
     .infoCard {
@@ -115,6 +130,7 @@
     }
     .activityCards {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .actCardStyle {
         width: 45%;
@@ -167,17 +183,10 @@
     #actCardF img {
         height: 7.5rem;
     }
-    .foot {
+    #foot {
         gap: 1rem; 
     }
     .footerBlockList {
         width: 27%;
     }
-
-
-
-
-
-
-
 }   

@@ -7,17 +7,17 @@
         padding-right: 0;
         margin-left: 0;
     }
-    .headerNavTab {
+    #headerNavTab {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
     }
-    .logo {
+    #logo {
         height: 1rem;
         width: 10%;
         padding-left: 1.5rem;
     }
-    .resLogo {
+    #resLogo {
         padding-top: 2rem;
     }
     .tabItem {
@@ -48,7 +48,7 @@
         padding-left: 5%;
         font-size: 1rem;
     }
-    .lodgingForm {
+    #lodgingForm {
         border-top: 0.1rem #F2F2F2 solid;
         border-bottom: 0.1rem #F2F2F2 solid; 
         border-radius: 1.5em;
@@ -251,7 +251,7 @@
     {
         font-size: 1.1em;
     }
-    .foot
+    #foot
     {  
         flex-direction: column;
         height: auto;
@@ -263,7 +263,7 @@
         width: 75%;
         font-size: 1rem;
     }
-    .headerNavTab a:hover {   
+    #headerNavTab a:hover {   
         border-top: none;
         border-bottom: none;
         border-left: none;

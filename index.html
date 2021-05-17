@@ -3,7 +3,7 @@
     <head>
         <title>Réservia - Des hébergements et activités pour vos vacances dans la ville de votre choix</title>
         <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="desktop.css" />
 		<link rel="stylesheet" type="text/css" href="mobile.css" />
 		<link rel="stylesheet" type="text/css" href="tablet.css" />
@@ -18,8 +18,8 @@
         <!--header-->
 		
 		<div id="header">
-			<span class="logo"><img class="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></span>
-			<div class="headerNavTab">
+			<span id="logo"><img id="resLogo" src="img/logo/Reservia.svg" alt="Réservia"></span>
+			<div id="headerNavTab">
 				<a class="tabItem clickable" href="#lodging">Hébergements</a>
 				<a class="tabItem clickable" href="#activity">Activités</a>
 				<a class="tabItemRegister blue bold" href="#">S'inscrire</a>
@@ -32,7 +32,7 @@
 			<span id="subtitle">En plein centre ville ou en pleine nature</span>
 			<div>
 				<form>
-				    <div class="lodgingForm flexRow">
+				    <div id="lodgingForm" class="flexRow">
 						<label for="townChoice"><i id="position" class="fas fa-map-marker-alt iconSize"></i></label>
 				        <input type="text" name="townChoice" id="townChoice" placeholder="Marseille,France" size="30" maxlength="20" />
 				        <button id="search"><span class="buttonSize">Rechercher</span></button>
@@ -282,7 +282,7 @@
 
 		<!--footer-->
 		<footer>
-			<div class="foot">
+			<div id="foot">
 				<ul class="footerBlockList">
 					<li><h3>A propos</h3></li>
 					<li><a class="clickable footLink" href="#">Fonctionnement du site</a></li>

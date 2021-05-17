@@ -37,7 +37,7 @@ body {
     margin-left: 3rem;
     margin-bottom: 2rem;
 }
-.headerNavTab {
+#headerNavTab {
     animation: 3s width backwards;
     animation-delay: 3s;
     display: flex;
@@ -48,10 +48,10 @@ body {
 	align-items: center;
     font-size: 0.9rem;
 }
-.logo {
+#logo {
     height: 20%;
 }
-.resLogo {
+#resLogo {
     animation: 4s slideIn backwards;
     animation-delay: 1s;
 }
@@ -80,7 +80,7 @@ body {
 h1 {
     margin-bottom: 0.3rem;
 }
-.lodgingForm { 
+#lodgingForm { 
     border-radius: 1rem;
     background-color: #F2F2F2;
     margin-top: 1.5rem;
@@ -199,7 +199,7 @@ h2 {
 	display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    gap: 3rem;
+    gap: 4%;
     margin-top: 2rem;
     width: 100%;
 }
@@ -208,8 +208,8 @@ h2 {
     border-radius: 1.2rem;
     height: auto;
     width: 85%;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding-right: 3%;
+    padding-left: 3%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: 1rem;
@@ -226,7 +226,7 @@ h2 {
     margin-bottom: 3rem;
 }
 .card {
-    width: 30%;
+    width: 29%;
     height: 12rem;
     border-radius: 1.2rem;
     padding: 0.25rem;
@@ -253,8 +253,8 @@ h3 {
     border-radius: 1.2rem;
     height: auto;
     width: 35%;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding-right: 3%;
+    padding-left: 3%;
     padding-top: 2rem;
     margin-top: 1rem;
     padding-bottom: 3rem;
@@ -361,7 +361,7 @@ h3 {
     height: 14.5rem;
 }
 
-.foot {
+#foot {
     margin-top: 5rem;
     height: auto;
     width: 100%;
@@ -383,7 +383,7 @@ li h3 {
 .footerBlockList li {
     margin-bottom: 1rem;
 }  
-.headerNavTab a:hover {   
+#headerNavTab a:hover {   
     border-top: 0.15rem #0065FC solid;
     border-bottom: 0.15rem #FFF solid;
     border-left: 0.15rem #FFF solid;
