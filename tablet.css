@@ -1,91 +1,177 @@
 @media screen and (min-width: 600px) and (max-width: 980px)
 {
-    #lodgingTown
-    {
+    #header {
+        width: 95%;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        padding-left: 5%;
+    }
+    .headerNavTab {
+        width: 65%;
+    }
+    #lodging {
+        width: 100%;
+        margin: 0;
+    }
+    h1 {
+        margin-left: 5%;
+    }
+    #subtitle {
+        margin-left: 5%;
+    }
+    .lodgingForm {
+        width: 60%;
+        margin-left: 5rem;
+    }
+    #lodgingFilters {
         flex-wrap: wrap;
+        gap: 1rem;
+        margin-left: 5rem;
+    }
+    #titleFilter {
+        width: 80%;
+    }
+    .iconFilter {
+        width: 3.28rem;
+        height: 3.28rem;
+    }
+    #infoLogo {
+        padding-left: 5%;
+    }
+    #infoText {
+        font-size: 1.2rem;
     }
     .lodgingSection {
         flex-wrap: wrap;
+        gap: 0;
+        margin-top: 1rem;
     }
     h2 {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
     .lodging {
-        width: auto;
+        width: 100%;
         height: auto;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        border-radius: 0;
+    }
+    #lodgingTown
+    {
+        flex-wrap: wrap;
+        gap: 2rem;
     }
     .card {
-        width: 21em;
-        height: 15em;
-    }
-    .card img {
-        width: 21em;
-        height: 9em;
+        width: 46%;
+        height: 14em;
     }
     .infoCard {
-        font-size: 1.2em;
+        font-size: 1rem;
     }
     .more {
-        font-size: 1.5em;
+        font-size: 1.2rem;
     }
     .lodgingPop {
-        width: auto;
-        height: auto;
-        padding-right: 3em;
-        padding-left: 3em;
-        padding-bottom: 3em;
-
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 8%;
+        padding-top: 0;
     }
     .iconSize {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
     .lodgingPopCard {
         display: flex;
         flex-direction: row;
-        gap: 3.5em;
+        gap: 5%;
     }
     h3 {
         margin: 0em;
     }
     .popCard {
-        width: 21em;
-        height: 15em;
+        width: 29%;
+        height: 16rem;
         flex-wrap: wrap;
     }
     .popCard img {
         border-bottom-left-radius: 0em;
         border-top-right-radius: 0.9em;
-        width: 21em;
-        height: 9em;
+        width: 100%;
+        height: 60%;
+    }
+    .infoCardPop {
+        font-size: 0.8rem;
+        width: 80%;
     }
     #activity {
-        height: auto;
+        width: 90%;
+        margin-top: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .activityCards {
         flex-wrap: wrap;
     }
     .actCardStyle {
-        width: 37em;
-        border-radius: 2em;
-    }
-    #actCardB, #actCardC, #actCardE, #actCardF {
-        height: 15em;
-    }
-    #actCardB img, #actCardC img, #actCardE img, #actCardF img {
-        height: 11em;
+        width: 45%;
     }
     .actCardA {
-        height: 34em;
+        height: 24rem;
+    }
+    .actCardBC {
+        width: 45%;
+    }
+    #actCardB {
+        height: 11.5rem;
+    }
+    #actCardC {
+        height: 9rem;
+    }
+    #actCardE {
+        height: 10rem;
+    }
+    #actCardF {
+        height: 10rem;
+    }
+    #actCardB, #actCardC, #actCardE, #actCardF {
+        width: 100%;
+    }
+    #actCardA {
+        order: 1;
+    }
+    #actCardBC {
+        order: 2;
+    }
+    #actCardD {
+        order: 4;
+    }
+    #actCardEF {
+        order: 3;
     }
     .actCardA img {
-        height: 30em;
+        height: 21.5rem;
     }
-    .imgSetting {
-        border-top-left-radius: 2em;
-        border-top-right-radius: 2em;
+    #actCardB img {
+        height: 9rem;
+    }
+    #actCardC img {
+        height: 6.5rem;
+    }
+    #actCardE img {
+        height: 7.5rem;
+    }
+    #actCardF img {
+        height: 7.5rem;
+    }
+    .foot {
+        gap: 1rem; 
+    }
+    .footerBlockList {
+        width: 27%;
     }
 
 
