@@ -8,7 +8,7 @@
         margin-left: 0;
     }
     #headerNavTab {
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -33,7 +33,7 @@
     .tabItemRegister {
         order: 1;
         padding-top: 2rem;
-        width: 94%;
+        width: 70%;
         font-size: 1rem;
         padding-right: 1rem;
         text-align-last: end;
@@ -262,67 +262,14 @@
     {
         width: 75%;
         font-size: 1rem;
-    }
-    #headerNavTab a:hover {   
+    }.tabItem:hover {
         border-top: none;
-        border-bottom: none;
-        border-left: none;
-        border-right: none;
-        color: #000;
+        border-bottom: 0.2rem solid #0065fc;
     }
-    .filter:hover .iconFilter{
-        color: #DEEBFF;
-        background-color: #0065FC;
-        transform-origin: none;
-        transform: none;
+    .tabItemRegister:hover {
+        border-top: 0.15rem solid #FFF;
     }
-    #lodgingTown:hover .card, .lodgingPopCard:hover .popCard, .activityCards:hover .actCardStyle {
-        filter: none;
-        opacity: 1;
-        transform: none;
-        box-shadow:none;
-    }
-    #lodgingTown:hover .card:hover, .lodgingPopCard:hover .popCard:hover, .activityCards:hover .actCardStyle:hover {
-        transform: none;
-        filter: none;
-        box-shadow: none;
-    }
-    .footLink:hover, .more:hover {
-        filter: none;
-    }  
-    .filter:active .iconFilter{
-        color: #DEEBFF;
-        background-color: #0065FC;
-        transform-origin: center;
-        transform: rotate(15deg);
-    }
-    #lodgingTown:active .card, .lodgingPopCard:active .popCard, .activityCards:active .actCardStyle {
-        filter: grayscale(20%);
-        opacity:.5;
-        transform: scale(.98);
-        box-shadow:none;
-    }
-    #lodgingTown:active .card:active, .lodgingPopCard:active .popCard:active, .activityCards:active .actCardStyle:active {
-        transform:scale(1);
-        filter: grayscale(0);
-        opacity:1;
-        box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
-    }
-    .footLink:active, .more:active {
-        filter: drop-shadow(0 0.2em 0.1em #000);
-    }
-    .tabItem:active {
-        border-bottom: 0.2em #0065FC solid;
-        color: #0065FC;
-    }
-    @keyframes width {
-        from {
-            opacity: 0;  
-        }
-        to {
-            opacity: 1;
-        }
-    }
+
     @keyframes jump {
         from {
             margin-bottom: 0%;
@@ -331,23 +278,7 @@
             margin-bottom: 30%;
         }
     }    
-    @keyframes slideIn {
-        from {
-            opacity: 0;  
-            margin-left: 0%;
-            width: 1%;
-        }
-        75% {
-            opacity: 0.5;  
-            margin-left: 50%;
-            width: 140%;
-        }
-        to {
-            opacity: 1;
-            margin-left: 0%;
-            width: 100%;
-        }
-    }
+    
 }
   
      

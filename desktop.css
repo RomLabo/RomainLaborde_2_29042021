@@ -43,7 +43,7 @@ body {
     display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 35%;
+	width: 40%;
 	height: 20%;
 	align-items: center;
     font-size: 0.9rem;
@@ -84,7 +84,7 @@ h1 {
     border-radius: 1rem;
     background-color: #F2F2F2;
     margin-top: 1.5rem;
-    width: 33%;
+    width: 35%;
     height: 3.05rem;
     justify-content: space-between;
     align-items: center;
@@ -383,11 +383,12 @@ li h3 {
 .footerBlockList li {
     margin-bottom: 1rem;
 }  
-#headerNavTab a:hover {   
+.tabItem:hover {
     border-top: 0.15rem #0065FC solid;
-    border-bottom: 0.15rem #FFF solid;
-    border-left: 0.15rem #FFF solid;
-    border-right: 00.15rem #FFF solid;
+    color: #0065FC;
+}
+.tabItemRegister:hover {
+    border-top: 0.15rem #0065FC solid;
     color: #0065FC;
 }
 button:hover {
