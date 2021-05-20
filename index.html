@@ -34,7 +34,7 @@
 				<form>
 				    <div id="lodgingForm" class="flexRow">
 						<label for="townChoice"><i id="position" class="fas fa-map-marker-alt iconSize"></i></label>
-				        <input type="text" name="townChoice" id="townChoice" placeholder="Marseille,France" size="30" maxlength="20" />
+				        <input type="text" name="townChoice" id="townChoice" placeholder="Marseille, France" size="30" maxlength="20" />
 				        <button id="search"><span class="buttonSize">Rechercher</span></button>
 						<button id="searchIcon"><i class="fas fa-search iconSize"></i></button>
 					</div>
@@ -68,7 +68,10 @@
 				</a>
 			</div>
 			<div id="infoLogo" class="flexRow">
-				<div id="infoCircle"><span id="info" class="blue bold">i</span></div>
+				<span id="infoSize" class="fa-stack fa-2x">
+					<i id="infoCircle" class="far fa-circle fa-stack-2x grey"></i>
+					<i class="fas fa-info fa-stack-1x blue"></i>
+				</span>
 				<span id="infoText">Plus de 500 logements sont disponibles dans cette ville</span>
 			</div>
 			<div class="lodgingSection">
@@ -172,12 +175,12 @@
 							</a>
 						</div>	
 					</div>
-					<a href="#" class="clickable bold more">Afficher plus</a>
+					<a href="#" id="more" class="clickable bold">Afficher plus</a>
 				</div>
 				<div class="lodgingPop">
 					<div class="lodgingPopHeader flexRow">
 						<h2>Les plus populaires</h2>
-						<i class="fas fa-chart-line iconSize"></i>
+						<a href="#" id="logoPop" class="clickable"><i class="fas fa-chart-line iconSize"></i></a>
 					</div>
 					<div class="lodgingPopCard">
 						<a href="#" class="clickable popCard flexRow">

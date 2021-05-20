@@ -34,6 +34,7 @@
         order: 1;
         padding-top: 2rem;
         width: 70%;
+        border-left: none;
         font-size: 1rem;
         padding-right: 1rem;
         text-align-last: end;
@@ -68,11 +69,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    #position{
-        animation: 1s jump backwards;
-        animation-delay: 4s;
-        animation-iteration-count: 10;
     }
     input[type=text] {
         font-size: 1rem;
@@ -116,19 +112,19 @@
     }
     #infoLogo {
         justify-content: center;
-        align-items: baseline;
         padding-left: 0;
         gap: 0.5rem;
+        height: 3rem;
+        align-items: flex-start;
     }
     #infoCircle {
-        border: 0.1rem #DEEBFF solid;
-        font-size: 1rem;
-        width: 1.2rem;
-        height: 1.2rem;
+        align-self: baseline;
     }
     #infoText {
         font-size: 1rem;
         width: 80%;
+        align-self: center;
+        height: 2rem;
     }
     #lodging
     {
@@ -140,7 +136,7 @@
     {
         flex-direction: column-reverse;
         gap: 0;
-        margin-top: 1rem;
+        margin-top: 0;
     }
     .lodging
     {
@@ -204,7 +200,7 @@
     .infoCardPop {
         font-size: 0.9rem;
     }
-    .more {
+    #more {
         font-size: 1rem;
     }
     #activity
@@ -292,7 +288,10 @@
         opacity: 1;
         box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.5rem -0.5rem 1.5rem #F2F2F2;
     }
-    .footLink:hover, .more:hover {
+    #more:hover, #logoPop:hover {
+        color: #000;
+    }
+    .footLink:hover {
         font-weight: normal;
         cursor: pointer;
     }
@@ -319,10 +318,12 @@
         opacity:1;
         box-shadow:0 0.5rem 1rem 0 rgba(0,0,0,0.125);
     }
-    .footLink:active, .more:active {
+    #more:active, #logoPop:active {
+        color: #0065FC;
+    }
+    .footLink:active {
         font-weight: 800;
     }
-
     @keyframes jump {
         from {
             margin-bottom: 0%;
@@ -331,7 +332,6 @@
             margin-bottom: 30%;
         }
     }    
-    
 }
   
      

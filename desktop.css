@@ -38,8 +38,8 @@ body {
     margin-bottom: 2rem;
 }
 #headerNavTab {
-    animation: 3s width backwards;
-    animation-delay: 3s;
+    animation: 1.5s slideIn backwards;
+    animation-delay: 1s;
     display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -52,8 +52,8 @@ body {
     height: 20%;
 }
 #resLogo {
-    animation: 4s slideIn backwards;
-    animation-delay: 1s;
+    animation: 1.5s appear backwards;
+    animation-delay: 0.5s;
 }
 .tabItem {
     height: 2rem;
@@ -95,12 +95,11 @@ label {
 }
 #position{
     animation: 1s jump backwards;
-    animation-delay: 7s;
-    animation-iteration-count: 10;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
 }
 input[type=text] {
     font-size: 1.2rem;
-    font-weight: 800;
     font-family: 'Raleway', sans-serif, Arial;
     padding-left: 1rem;
     height: 88%;
@@ -182,14 +181,9 @@ input[type=text] {
     gap: 1rem;
     padding-left: 1rem;
 }
-#infoCircle {
-    border: 0.15rem #DEEBFF solid;
-    background-color: #FFF;
-    border-radius: 1rem;
-    width: 1.4rem;
-    height: 1.4rem;
-    text-align: center;
-    font-family: Georgia;
+#infoSize {
+    width: 2rem;
+    font-size: 1rem;
 }
 h2 {
     font-size: 1.35rem;
@@ -215,7 +209,7 @@ h2 {
     margin-top: 1rem;
 }
 .stars {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 #lodgingTown {
     display: flex;
@@ -227,7 +221,7 @@ h2 {
 }
 .card {
     width: 29%;
-    height: 12rem;
+    height: auto;
     border-radius: 1.2rem;
     padding: 0.25rem;
     background-color: #FFF;
@@ -237,13 +231,15 @@ h2 {
     border-top-right-radius: 1rem;
     object-fit: cover;
     width: 100%;
-    height: 60%;
+    height: 7rem;
 }
 .infoCard {
     margin-left: 1rem;
     margin-top: 0.3rem;
     gap: 0.3rem;
     font-size: 0.8rem;
+    height: 4rem;
+    padding-bottom: 0.1rem;
 }
 h3 {
     margin: 0;
@@ -410,18 +406,17 @@ button:hover {
     opacity:1;
     box-shadow:0 0.5rem 1rem 0 rgba(0,0,0,0.125);
 }
-.footLink:hover, .more:hover {
+#more:hover, #logoPop:hover {
+    color: #0065FC;
+}
+.footLink:hover {
     font-weight: 800;
     cursor: pointer;
 }    
-@keyframes width {
+@keyframes slideIn {
     from {
         opacity: 0;
-        margin-right: 0%;  
-    }
-    50% {
-        opacity: 1;
-        margin-right: 10%;
+        margin-right: -3%;  
     }
     to {
         opacity: 1;
@@ -436,7 +431,7 @@ button:hover {
         margin-bottom: 40%;
     }
 }  
-@keyframes slideIn {
+@keyframes appear {
     from {
         opacity: 0;  
     }
