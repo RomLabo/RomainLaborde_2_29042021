@@ -169,10 +169,64 @@
     .footerBlockList {
         width: 27%;
     }
-    #headerNavTab a:hover {   
+    .tabItem:hover {
         border-top: none;
-        border-bottom: 0.2rem solid #0065ef;
+        border-bottom: 0.2rem solid #f2f2f2;
+        color: #000;
+    }
+    .tabItemRegister:hover {
+        border-top: none;
+        border-bottom: 0.2rem solid #f2f2f2;
+    }
+    .filter:hover .iconFilter{
+        color: #0065FC;
+        background-color: #DEEBFF;
+        transform-origin: none;
+        transform: none;
+    }
+    .lodgingPopCard:hover .popCard, .lodgingPopCard:hover .popCard:hover {
+        filter: none;
+        opacity: 1;
+        box-shadow: 0.5rem 0.5rem 2rem #d9d9d9, -0.5rem -0.5rem 2rem #d9d9d9;
+    }
+    #lodgingTown:hover .card, #lodgingTown:hover .card:hover {
+        filter: none;
+        opacity: 1;
+        box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.2rem -0.2rem 0.5rem #F2F2F2;
+    }
+    .activityCards:hover .actCardStyle, .activityCards:hover .actCardStyle:hover {
+        filter: none;
+        opacity: 1;
+        box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.5rem -0.5rem 1.5rem #F2F2F2;
+    }
+    .footLink:hover, .more:hover {
+        font-weight: normal;
+        cursor: pointer;
+    }
+    #headerNavTab a:active {
+        color: #0065FC;   
+        border-top: none;
+        border-bottom: 0.2rem solid #0065FC;
         border-left: none;
         border-right: none;
+    }
+    .filter:active .iconFilter{
+        color: #DEEBFF;
+        background-color: #0065FC;
+        transform-origin: center;
+        transform: rotate(15deg);
+    }
+    #lodgingTown:active .card, .lodgingPopCard:active .popCard, .activityCards:active .actCardStyle {
+        filter: grayscale(20%);
+        opacity:.5;
+        box-shadow:none;
+    }
+    #lodgingTown:active .card:active, .lodgingPopCard:active .popCard:active, .activityCards:active .actCardStyle:active {
+        filter: grayscale(0);
+        opacity:1;
+        box-shadow:0 0.5rem 1rem 0 rgba(0,0,0,0.125);
+    }
+    .footLink:active, .more:active {
+        font-weight: 800;
     }
 }   
