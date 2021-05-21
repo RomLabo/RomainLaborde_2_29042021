@@ -7,11 +7,6 @@
         padding-right: 0;
         margin-left: 0;
     }
-    #headerNavTab {
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: 100%;
-    }
     #logo {
         height: 1rem;
         width: 10%;
@@ -19,6 +14,11 @@
     }
     #resLogo {
         padding-top: 2rem;
+    }
+    #headerNavTab {
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
     }
     .tabItem {
         padding-top: 2rem;
@@ -39,6 +39,12 @@
         padding-right: 1rem;
         text-align-last: end;
     }
+
+    #lodging {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
     h1 {
         width: 80%;
         font-size: 1.4rem;
@@ -50,8 +56,8 @@
         font-size: 1rem;
     }
     #lodgingForm {
-        border-top: 0.1rem #F2F2F2 solid;
-        border-bottom: 0.1rem #F2F2F2 solid; 
+        border-top: 0.14rem #F2F2F2 solid;
+        border-bottom: 0.14rem #F2F2F2 solid; 
         border-radius: 1.5em;
         background-color: #FFF;
         width: 85%;
@@ -72,7 +78,7 @@
     }
     input[type=text] {
         font-size: 1rem;
-        height: 97%;
+        height: 95%;
         width: 65%;
     }
     ::placeholder {
@@ -126,19 +132,13 @@
         align-self: center;
         height: 2rem;
     }
-    #lodging
-    {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-    .lodgingSection
+    #lodgingSection
     {
         flex-direction: column-reverse;
         gap: 0;
         margin-top: 0;
     }
-    .lodging
+    #lodgings
     {
         width: 90%;
         background-color: #FFF;
@@ -168,17 +168,20 @@
         flex-wrap: wrap;
         margin-top: 1.5rem;
     }
-    .lodgingPop
+    #more {
+        font-size: 1rem;
+    }
+    #lodgingPop
     {
         width: 90%;
         border-radius: 0;
         padding-left: 5%;
         padding-right: 5%;
     }
-    .lodgingPopHeader {
+    #lodgingPopHeader {
         padding-right: 0;
     }
-    .lodgingPopCard {
+    #lodgingPopCard {
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -200,9 +203,7 @@
     .infoCardPop {
         font-size: 0.9rem;
     }
-    #more {
-        font-size: 1rem;
-    }
+    
     #activity
     {
         width: 90%;
@@ -213,7 +214,7 @@
         font-size: 1.4rem;
         margin: 0;
     }
-    .activityCards
+    #activityCards
     {
         flex-direction: column;
         gap: 0;
@@ -224,6 +225,13 @@
         margin-top: 2rem;
         border-radius: 1.5rem;
         box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.5rem -0.5rem 1.5rem #F2F2F2;
+    }
+    .imgSetting {
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+    }
+    .infoActCard {
+        font-size: 1rem;
     }
     .actCardBC {
         gap: 0;
@@ -236,17 +244,11 @@
     {
         height: 80%;
     }
-    .imgSetting {
-        border-top-left-radius: 1.5rem;
-        border-top-right-radius: 1.5rem;
-    }
-    .infoActCard {
-        font-size: 1rem;
-    }
     h3 
     {
         font-size: 1.1em;
     }
+
     #foot
     {  
         flex-direction: column;
@@ -259,6 +261,7 @@
         width: 75%;
         font-size: 1rem;
     }
+    
     .tabItem:hover {
         border-top: none;
         border-bottom: 0.2rem solid #DEEBFF;
@@ -273,7 +276,7 @@
         transform-origin: none;
         transform: none;
     }
-    .lodgingPopCard:hover .popCard, .lodgingPopCard:hover .popCard:hover {
+    #lodgingPopCard:hover .popCard, #lodgingPopCard:hover .popCard:hover {
         filter: none;
         opacity: 1;
         box-shadow: 0.5rem 0.5rem 2rem #d9d9d9, -0.5rem -0.5rem 2rem #d9d9d9;
@@ -283,7 +286,7 @@
         opacity: 1;
         box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.2rem -0.2rem 0.5rem #F2F2F2;
     }
-    .activityCards:hover .actCardStyle, .activityCards:hover .actCardStyle:hover {
+    #activityCards:hover .actCardStyle, #activityCards:hover .actCardStyle:hover {
         filter: none;
         opacity: 1;
         box-shadow: 0.5rem 0.5rem 1.5rem #F2F2F2, -0.5rem -0.5rem 1.5rem #F2F2F2;
@@ -308,12 +311,12 @@
         transform-origin: center;
         transform: rotate(15deg);
     }
-    #lodgingTown:active .card, .lodgingPopCard:active .popCard, .activityCards:active .actCardStyle {
+    #lodgingTown:active .card, #lodgingPopCard:active .popCard, #activityCards:active .actCardStyle {
         filter: grayscale(20%);
         opacity:.5;
         box-shadow:none;
     }
-    #lodgingTown:active .card:active, .lodgingPopCard:active .popCard:active, .activityCards:active .actCardStyle:active {
+    #lodgingTown:active .card:active, #lodgingPopCard:active .popCard:active, #activityCards:active .actCardStyle:active {
         filter: grayscale(0);
         opacity:1;
         box-shadow:0 0.5rem 1rem 0 rgba(0,0,0,0.125);
